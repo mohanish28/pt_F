@@ -1,0 +1,17 @@
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.DS_Store
+dist/
+build/
+*.egg-info/
+.vscode/
+.idea/
+coverage.xml
+*.log
