@@ -1,3 +1,486 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56f95fce81adf7532da898d5dfdb8a216e8a932b3d1cbee886402e8112648636
-size 30182
+2026-01-03 19:46:20 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: security_crawler)
+2026-01-03 19:46:20 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.1',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.4.1 11 Feb 2025)',
+ 'cryptography': '44.0.3',
+ 'Platform': 'Windows-11-10.0.26200-SP0'}
+2026-01-03 19:46:20 [security_spider] INFO: ================================================================================
+2026-01-03 19:46:20 [security_spider] INFO: SECURITY SPIDER INITIALIZED - REDIS MODE
+2026-01-03 19:46:20 [security_spider] INFO: ================================================================================
+2026-01-03 19:46:20 [security_spider] INFO:   Scan ID: default_scan
+2026-01-03 19:46:20 [security_spider] INFO:   Start URL: 
+2026-01-03 19:46:20 [security_spider] INFO:   Max Pages: 10000
+2026-01-03 19:46:20 [security_spider] INFO:   JS Render: 20%
+2026-01-03 19:46:20 [security_spider] INFO:   Redis: localhost:6379/0
+2026-01-03 19:46:20 [security_spider] INFO:   Redis Key: security_spider:start_urls
+2026-01-03 19:46:20 [security_spider] INFO: ================================================================================
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1151, in emit
+    msg = self.format(record)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 999, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 712, in format
+    record.message = record.getMessage()
+                     ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 400, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+KeyError: 'redis_encoding'
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\__main__.py", line 4, in <module>
+    execute()
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\cmdline.py", line 205, in execute
+    _run_print_help(parser, _run_command, cmd, args, opts)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\cmdline.py", line 158, in _run_print_help
+    func(*a, **kw)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\cmdline.py", line 213, in _run_command
+    cmd.run(args, opts)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\commands\runspider.py", line 60, in run
+    self.crawler_process.crawl(spidercls, **opts.spargs)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 339, in crawl
+    return self._crawl(crawler, *args, **kwargs)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 343, in _crawl
+    d = crawler.crawl(*args, **kwargs)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\twisted\internet\defer.py", line 2136, in unwindGenerator
+    return _cancellableInlineCallbacks(gen)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\twisted\internet\defer.py", line 2046, in _cancellableInlineCallbacks
+    _inlineCallbacks(None, gen, status, _copy_context())
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\twisted\internet\defer.py", line 1857, in _inlineCallbacks
+    result = context.run(gen.send, result)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 153, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\crawler.py", line 166, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "C:\Users\91840\OneDrive\Desktop\SCLERA(jayam)\pt_F\backend\distributed_system\scrapy_project\security_crawler\spiders\security_spider.py", line 99, in from_crawler
+    spider = super().from_crawler(crawler, *args, **kwargs)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy_redis\spiders.py", line 262, in from_crawler
+    obj.setup_redis(crawler)
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy_redis\spiders.py", line 79, in setup_redis
+    self.logger.info(
+Message: "Reading start URLs from redis key '%(redis_key)s' (batch size: %(redis_batch_size)s, encoding: %(redis_encoding)s)"
+Arguments: {'start_urls': [], 'scan_id': 'default_scan', 'start_url': '', 'pages_crawled': 0, 'max_pages': 10000, 'js_render_percentage': 20, 'redis_client': Redis<ConnectionPool<Connection<host=localhost,port=6379,db=0>>>, 'crawler': <scrapy.crawler.Crawler object at 0x0000020791B68D70>, 'settings': <scrapy.settings.Settings object at 0x0000020791B05F90>, 'redis_key': 'security_spider:start_urls', 'redis_batch_size': 1}
+2026-01-03 19:46:20 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-01-03 19:46:20 [py.warnings] WARNING: C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\utils\request.py:120: ScrapyDeprecationWarning: 'REQUEST_FINGERPRINTER_IMPLEMENTATION' is a deprecated setting.
+It will be removed in a future version of Scrapy.
+  return cls(crawler)
+
+2026-01-03 19:46:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-01-03 19:46:20 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 3.0,
+ 'AUTOTHROTTLE_START_DELAY': 0.5,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 4.0,
+ 'BOT_NAME': 'security_crawler',
+ 'DEPTH_LIMIT': 20,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': None,
+ 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter',
+ 'LOG_LEVEL': 'INFO',
+ 'MEMUSAGE_LIMIT_MB': 2048,
+ 'MEMUSAGE_WARNING_MB': 1536,
+ 'NEWSPIDER_MODULE': 'security_crawler.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler',
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'SPIDER_MODULES': ['security_crawler.spiders'],
+ 'URLLENGTH_LIMIT': 2048}
+2026-01-03 19:46:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'security_crawler.middlewares.RandomUserAgentMiddleware',
+ 'security_crawler.middlewares.SecurityCrawlerDownloaderMiddleware',
+ 'security_crawler.middlewares.CustomRetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-01-03 19:46:20 [py.warnings] WARNING: C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\spidermiddlewares\offsite.py:19: ScrapyDeprecationWarning: The scrapy.spidermiddlewares.offsite module is deprecated, use scrapy.downloadermiddlewares.offsite instead.
+  warnings.warn(
+
+2026-01-03 19:46:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'security_crawler.middlewares.SecurityCrawlerSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-01-03 19:46:20 [py.warnings] WARNING: C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\core\spidermw.py:98: ScrapyDeprecationWarning: The following enabled spider middlewares, directly or through their parent classes, define the deprecated process_start_requests() method: security_crawler.middlewares.SecurityCrawlerSpiderMiddleware. process_start_requests() has been deprecated in favor of a new method, process_start(), to support asynchronous code execution. process_start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace process_start_requests() with process_start(); note that process_start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when defining process_start_requests() in a spider middleware class, define process_start() as well. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2026-01-03 19:46:20 [scrapy.core.spidermw] WARNING: Middleware security_crawler.middlewares.SecurityCrawlerSpiderMiddleware doesn't support asynchronous spider output, this is deprecated and will stop working in a future version of Scrapy. The middleware should be updated to support it. Please see https://docs.scrapy.org/en/latest/topics/coroutines.html#for-middleware-users for more information.
+2026-01-03 19:46:20 [scrapy.middleware] INFO: Enabled item pipelines:
+['security_crawler.pipelines.RedisPipeline',
+ 'security_crawler.pipelines.ScannerDispatcherPipeline']
+2026-01-03 19:46:20 [scrapy.core.engine] INFO: Spider opened
+2026-01-03 19:46:20 [py.warnings] WARNING: C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: scrapy_redis.spiders.RedisMixin (inherited by security_spider.SecuritySpider) defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2026-01-03 19:46:20 [RedisPipeline] INFO: Connected to Redis: localhost:6379
+2026-01-03 19:46:20 [ScannerDispatcherPipeline] INFO: Scanner dispatcher initialized
+2026-01-03 19:46:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:46:20 [security_spider] INFO: Downloader middleware active
+2026-01-03 19:46:20 [security_spider] INFO: Spider opened: security_spider
+2026-01-03 19:46:20 [scrapy-playwright] INFO: Starting download handler
+2026-01-03 19:46:20 [scrapy-playwright] INFO: Starting download handler
+2026-01-03 19:46:20 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<Connection.run() done, defined at C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py:303> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 310, in run
+    await self._transport.connect()
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 1802, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 539, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-03 19:46:20 [asyncio] ERROR: Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<Connection.run() done, defined at C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py:303> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 310, in run
+    await self._transport.connect()
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 1802, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 539, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-03 19:46:20 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method ScrapyPlaywrightDownloadHandler._engine_started of <scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler object at 0x0000020792E93A10>>
+Traceback (most recent call last):
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\twisted\internet\defer.py", line 1257, in adapt
+    extracted: _SelfResultT | Failure = result.result()
+                                        ~~~~~~~~~~~~~^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy_playwright\handler.py", line 116, in _launch
+    self.playwright = await self.playwright_context_manager.start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 1802, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 539, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-03 19:46:20 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method ScrapyPlaywrightDownloadHandler._engine_started of <scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler object at 0x0000020792EAAD50>>
+Traceback (most recent call last):
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\twisted\internet\defer.py", line 1257, in adapt
+    extracted: _SelfResultT | Failure = result.result()
+                                        ~~~~~~~~~~~~~^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\scrapy_playwright\handler.py", line 116, in _launch
+    self.playwright = await self.playwright_context_manager.start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 1802, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 539, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-03 19:47:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:48:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:49:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:50:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:51:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:52:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:53:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:54:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:55:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:56:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:57:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:58:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 19:59:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:00:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:01:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:02:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:03:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:04:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:05:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:06:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:07:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:08:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:09:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:10:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:11:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:12:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:13:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:14:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:15:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:16:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:17:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:18:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:19:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:20:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:21:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:22:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:23:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:24:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:25:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:26:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:27:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:28:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:29:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:30:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:31:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:32:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:33:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:34:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:35:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:36:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:37:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:38:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:39:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:40:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:41:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:42:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:43:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:44:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:45:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:46:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:47:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:48:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:49:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:50:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:51:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:52:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:53:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:54:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:55:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:56:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:57:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:58:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 20:59:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:00:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:01:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:02:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:03:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:04:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:05:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:06:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:07:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:08:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:09:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:10:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:11:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:12:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:13:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:14:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:15:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:16:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:17:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:18:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:19:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:20:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:21:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:22:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:23:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:24:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:25:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:26:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:27:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:28:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:29:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:30:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:31:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:32:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:33:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:34:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:35:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:36:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:37:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:38:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:39:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:40:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:41:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:42:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:43:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:44:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:45:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:46:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:47:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:48:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:49:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:50:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:51:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:52:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:53:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:54:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:55:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:56:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:57:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:58:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 21:59:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:00:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:01:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:02:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:03:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:04:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:05:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:06:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:07:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:08:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:09:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:10:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:11:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:12:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:13:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:14:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:15:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:16:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:17:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:18:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:19:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:20:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:21:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:22:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:23:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:24:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:25:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:26:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:27:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:28:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:29:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:30:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:31:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:32:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:33:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:34:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:35:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:36:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:37:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:38:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:39:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:40:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:41:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:42:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:43:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:44:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:45:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:46:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:47:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:48:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:49:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:50:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:51:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:52:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:53:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:54:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:55:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:56:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:57:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:58:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 22:59:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:00:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:01:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:02:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:03:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:04:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:05:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:06:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:07:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:08:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:09:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:10:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:11:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:12:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:13:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:14:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:15:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:16:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-01-03 23:17:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)

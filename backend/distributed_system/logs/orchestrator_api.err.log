@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5b91108e08b8f096b543cd65472777ce2ebeb1f8f7a816d1c858c0cbe74114f
-size 405
+INFO:     Will watch for changes in these directories: ['C:\\Users\\91840\\OneDrive\\Desktop\\SCLERA(jayam)\\pt_F\\backend\\distributed_system']
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [32064] using StatReload
+INFO:     Started server process [2136]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

@@ -1,0 +1,18 @@
+{
+  "scan_id": "localhost81_20260103_095425_public",
+  "target_url": "http://localhost:8081/WebWolf/",
+  "username": "public",
+  "scan_start": "2026-01-03T09:54:25.615680",
+  "scan_end": "2026-01-03T09:59:31.381695",
+  "status": "completed",
+  "findings_count": 385,
+  "summary": {
+    "total_findings": 385,
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "info": 0
+  },
+  "scan_mode": "owasp"
+}

@@ -1,3 +1,923 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7725beb97fd9829f5ed8b18e5fc058c97f81bf1c9dbc84f56f2669091955d469
-size 888
+2026-01-03 19:46:28,043 - ScannerWorker_network_worker_0 - INFO - Imported NetworkScanner
+2026-01-03 19:46:28,044 - ScannerWorker_network_worker_0 - INFO - Imported NmapScanner
+2026-01-03 19:46:28,045 - ScannerWorker_network_worker_0 - INFO - Imported SSLLabsScanner
+2026-01-03 19:46:28,045 - ScannerWorker_network_worker_0 - INFO - Imported PLCScanScanner
+2026-01-03 19:46:28,053 - ScannerWorker_network_worker_0 - INFO - Imported WHOISScanner
+2026-01-03 19:46:28,053 - ScannerWorker_network_worker_0 - INFO - Imported SSHAuditScanner
+2026-01-03 19:46:28,054 - ScannerWorker_network_worker_0 - INFO - Loaded 6 scanners for category network
+2026-01-03 19:46:28,062 - ScannerWorker_network_worker_0 - INFO - Connected to Redis: redis://localhost:6379/0
+2026-01-03 19:46:28,063 - ScannerWorker_network_worker_0 - INFO - Scanner worker network_worker_0 started for category network
+2026-01-03 19:49:46,691 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 19:49:46,765 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_744ff861 with NetworkScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:51:20,960 - httpx - INFO - HTTP Request: GET https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json "HTTP/1.1 200 OK"
+2026-01-03 19:51:20,993 - scanners.cve_enhancement - INFO - Updated CISA KEV cache from feed (1484 entries)
+2026-01-03 19:51:21,544 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 19:51:34,460 - scanners.cve_enhancement - INFO - Enhanced 3/3 findings with CVE data
+2026-01-03 19:51:34,460 - scanners.NETWORK.plcscan_scanner - INFO - Starting PLC scan on 0a020063048e87c282a37e2d00940014.web-security-academy.net
+2026-01-03 19:51:54,962 - scanners.cve_enhancement - INFO - Enhanced 1/1 findings with CVE data
+2026-01-03 19:51:54,965 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 19:52:00,127 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 19:52:00,127 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage', 'nmap_results', 'whois_results', 'ssl_results', 'plc_results', 'raw_data']
+2026-01-03 19:52:00,128 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['NetworkScanner']
+2026-01-03 19:52:00,228 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:00,232 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NetworkScanner' marked as completed (144 total)
+2026-01-03 19:52:00,235 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:00,236 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_744ff861 completed successfully in 133.36s with 7 findings
+2026-01-03 19:52:00,237 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a2318b30 with SSLLabsScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:52:16,853 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='34.246.129.62', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 19:52:16,853 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+C:\Users\91840\AppData\Local\Programs\Python\Python313\Lib\site-packages\sslyze\plugins\certificate_info\trust_stores\trust_store.py:55: CryptographyDeprecationWarning: Parsed a negative serial number, which is disallowed by RFC 5280. Loading this certificate will cause an exception in the next release of cryptography.
+  self._x509_store = Store(load_pem_x509_certificates(self.path.read_bytes()))
+C:\Users\91840\OneDrive\Desktop\SCLERA(jayam)\pt_F\backend\scanners\NETWORK\ssl_labs_scanner.py:224: CryptographyDeprecationWarning: Properties that return a naïve datetime object have been deprecated. Please switch to not_valid_after_utc.
+  days_until_expiry = (cert.not_valid_after - datetime.now()).days
+2026-01-03 19:52:25,241 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 19:52:25,241 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'port', 'findings', 'scan_method', 'raw_data']
+2026-01-03 19:52:25,242 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['scan_method', 'domain', 'port', 'timestamp', 'sslyze_results']
+2026-01-03 19:52:25,333 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:25,337 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSLLabsScanner' marked as completed (171 total)
+2026-01-03 19:52:25,338 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 16/4 scanners completed!
+2026-01-03 19:52:25,339 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a2318b30 completed successfully in 25.00s with 6 findings
+2026-01-03 19:52:25,341 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a1d545cd with SSHAuditScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:52:25,343 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 19:52:30,492 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 19:52:30,492 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'error', 'findings', 'raw_data']
+2026-01-03 19:52:30,493 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['error', 'raw_output', 'stderr', 'timestamp']
+2026-01-03 19:52:30,500 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:30,502 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSHAuditScanner' marked as completed (173 total)
+2026-01-03 19:52:30,503 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 18/4 scanners completed!
+2026-01-03 19:52:30,504 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a1d545cd completed successfully in 5.15s with 0 findings
+2026-01-03 19:52:30,505 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_979ec3b3 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:56:12,067 - scanners.cve_enhancement - INFO - Enhanced 3/3 findings with CVE data
+2026-01-03 19:56:12,068 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 19:56:12,068 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 19:56:12,162 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:56:12,164 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (191 total)
+2026-01-03 19:56:12,165 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 19:56:12,166 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_979ec3b3 completed successfully in 221.53s with 3 findings
+2026-01-03 19:56:12,167 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5b1c2566 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+2026-01-03 19:57:16,829 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 19:57:16,829 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 19:57:16,829 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 19:57:16,918 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:57:16,920 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (210 total)
+2026-01-03 19:57:16,921 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 19:57:16,921 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5b1c2566 completed successfully in 64.64s with 2 findings
+2026-01-03 19:57:16,922 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ce1df4f6 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 20:00:13,911 - scanners.cve_enhancement - INFO - Enhanced 3/3 findings with CVE data
+2026-01-03 20:00:13,917 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:00:13,918 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:00:14,006 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:00:14,012 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (214 total)
+2026-01-03 20:00:14,015 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:00:14,016 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ce1df4f6 completed successfully in 176.97s with 3 findings
+2026-01-03 20:00:14,018 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2af9ceeb with SSLLabsScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 20:00:26,712 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='79.125.84.16', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:00:26,715 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:00:35,267 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:00:35,268 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'port', 'findings', 'scan_method', 'raw_data']
+2026-01-03 20:00:35,269 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['scan_method', 'domain', 'port', 'timestamp', 'sslyze_results']
+2026-01-03 20:00:35,359 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:00:35,363 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSLLabsScanner' marked as completed (218 total)
+2026-01-03 20:00:35,366 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:00:35,368 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2af9ceeb completed successfully in 21.25s with 6 findings
+2026-01-03 20:00:35,370 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_60f55309 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+2026-01-03 20:04:08,148 - scanners.cve_enhancement - INFO - Enhanced 3/3 findings with CVE data
+2026-01-03 20:04:08,149 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:04:08,150 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:04:08,238 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:04:08,240 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (246 total)
+2026-01-03 20:04:08,240 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:04:08,241 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_60f55309 completed successfully in 212.75s with 3 findings
+2026-01-03 20:04:08,242 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f815d874 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+2026-01-03 20:09:09,893 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:09:09,893 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:09:09,894 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:09:09,987 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:09:09,988 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (279 total)
+2026-01-03 20:09:09,989 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:09:09,990 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f815d874 completed successfully in 301.63s with 2 findings
+2026-01-03 20:09:09,990 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e12ad476 with SSLLabsScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 20:09:16,692 - scanners.cve_enhancement - INFO - Enhanced 3/3 findings with CVE data
+2026-01-03 20:09:16,694 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'port', 'findings', 'scan_method', 'raw_data']
+2026-01-03 20:09:16,694 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['scan_method', 'domain', 'port', 'timestamp', 'sslyze_results']
+2026-01-03 20:09:16,784 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:09:16,786 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSLLabsScanner' marked as completed (280 total)
+2026-01-03 20:09:16,787 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:09:16,788 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e12ad476 completed successfully in 6.70s with 3 findings
+2026-01-03 20:09:16,789 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1d5cafc0 with WHOISScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 20:09:19,126 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'domain_info', 'privacy_protected', 'raw_data']
+2026-01-03 20:09:19,128 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['raw_whois_output', 'timestamp']
+2026-01-03 20:09:19,138 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:09:19,141 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WHOISScanner' marked as completed (281 total)
+2026-01-03 20:09:19,142 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:09:19,143 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1d5cafc0 completed successfully in 2.34s with 1 findings
+2026-01-03 20:09:19,144 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5b3eaa25 with SSHAuditScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 20:09:19,148 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:09:24,289 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:09:24,290 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'error', 'findings', 'raw_data']
+2026-01-03 20:09:24,291 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['error', 'raw_output', 'stderr', 'timestamp']
+2026-01-03 20:09:24,297 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:09:24,299 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSHAuditScanner' marked as completed (282 total)
+2026-01-03 20:09:24,300 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:09:24,301 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5b3eaa25 completed successfully in 5.14s with 0 findings
+2026-01-03 20:09:24,302 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3ccbbb3e with NetworkScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 20:11:21,251 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:11:36,270 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='34.246.129.62', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:11:36,372 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:11:44,710 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:11:45,282 - scanners.NETWORK.plcscan_scanner - INFO - Starting PLC scan on 0a020063048e87c282a37e2d00940014.web-security-academy.net
+2026-01-03 20:12:06,481 - scanners.cve_enhancement - INFO - Enhanced 1/1 findings with CVE data
+2026-01-03 20:12:06,483 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:12:11,633 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:12:11,634 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage', 'nmap_results', 'whois_results', 'ssl_results', 'plc_results', 'raw_data']
+2026-01-03 20:12:11,634 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['NetworkScanner']
+2026-01-03 20:12:11,690 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:12:11,695 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NetworkScanner' marked as completed (301 total)
+2026-01-03 20:12:11,697 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:12:11,699 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3ccbbb3e completed successfully in 167.33s with 10 findings
+2026-01-03 20:12:11,701 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a5379101 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+2026-01-03 20:15:55,414 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:15:55,415 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:15:55,416 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:15:55,508 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:55,512 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (343 total)
+2026-01-03 20:15:55,515 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:55,517 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a5379101 completed successfully in 223.69s with 2 findings
+2026-01-03 20:15:55,518 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_8023ff02 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+2026-01-03 20:19:32,339 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:19:32,341 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:19:32,343 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:19:32,452 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:19:32,462 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (358 total)
+2026-01-03 20:19:32,466 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:19:32,470 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_8023ff02 completed successfully in 216.77s with 2 findings
+2026-01-03 20:19:32,473 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_58bc17ec with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 20:23:10,289 - scanners.cve_enhancement - INFO - Enhanced 3/3 findings with CVE data
+2026-01-03 20:23:10,289 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:23:10,290 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:23:10,382 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:23:10,385 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (376 total)
+2026-01-03 20:23:10,387 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:23:10,388 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_58bc17ec completed successfully in 217.78s with 3 findings
+2026-01-03 20:23:10,389 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_874566a9 with WHOISScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 20:23:12,672 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'domain_info', 'privacy_protected', 'raw_data']
+2026-01-03 20:23:12,673 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['raw_whois_output', 'timestamp']
+2026-01-03 20:23:12,680 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:23:12,683 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WHOISScanner' marked as completed (378 total)
+2026-01-03 20:23:12,685 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:23:12,686 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_874566a9 completed successfully in 2.28s with 1 findings
+2026-01-03 20:23:12,687 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ad1c18cb with SSHAuditScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 20:23:12,691 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:23:17,830 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:23:17,831 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'error', 'findings', 'raw_data']
+2026-01-03 20:23:17,832 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['error', 'raw_output', 'stderr', 'timestamp']
+2026-01-03 20:23:17,840 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:23:17,843 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSHAuditScanner' marked as completed (380 total)
+2026-01-03 20:23:17,845 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:23:17,848 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ad1c18cb completed successfully in 5.14s with 0 findings
+2026-01-03 20:23:17,849 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c865a721 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+2026-01-03 20:24:56,298 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:24:56,299 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:24:56,299 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:24:56,391 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:24:56,393 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (381 total)
+2026-01-03 20:24:56,394 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:24:56,394 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c865a721 completed successfully in 98.41s with 2 findings
+2026-01-03 20:24:56,395 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_bc406a90 with SSLLabsScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+2026-01-03 20:25:11,238 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='34.246.129.62', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:25:11,238 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:25:20,434 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:25:20,435 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'port', 'findings', 'scan_method', 'raw_data']
+2026-01-03 20:25:20,435 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['scan_method', 'domain', 'port', 'timestamp', 'sslyze_results']
+2026-01-03 20:25:20,525 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:25:20,527 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSLLabsScanner' marked as completed (387 total)
+2026-01-03 20:25:20,528 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:25:20,528 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_bc406a90 completed successfully in 24.04s with 6 findings
+2026-01-03 20:25:20,529 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7267f907 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 20:29:06,272 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:29:06,274 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:29:06,274 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:29:06,364 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:29:06,368 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (406 total)
+2026-01-03 20:29:06,370 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:29:06,371 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7267f907 completed successfully in 225.72s with 2 findings
+2026-01-03 20:29:06,373 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d96ccd52 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 20:30:10,164 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:30:10,164 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:30:10,165 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:30:10,258 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:30:10,262 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (409 total)
+2026-01-03 20:30:10,264 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:30:10,265 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d96ccd52 completed successfully in 63.76s with 2 findings
+2026-01-03 20:30:10,267 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7282f5e9 with WHOISScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 20:30:12,828 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'domain_info', 'privacy_protected', 'raw_data']
+2026-01-03 20:30:12,830 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['raw_whois_output', 'timestamp']
+2026-01-03 20:30:12,835 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:30:12,839 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WHOISScanner' marked as completed (410 total)
+2026-01-03 20:30:12,840 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:30:12,841 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7282f5e9 completed successfully in 2.56s with 1 findings
+2026-01-03 20:30:12,843 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_b050b68a with SSHAuditScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 20:30:12,846 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:30:17,979 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:30:17,980 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'error', 'findings', 'raw_data']
+2026-01-03 20:30:17,981 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['error', 'raw_output', 'stderr', 'timestamp']
+2026-01-03 20:30:17,988 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:30:17,995 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSHAuditScanner' marked as completed (411 total)
+2026-01-03 20:30:17,998 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:30:18,000 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_b050b68a completed successfully in 5.14s with 0 findings
+2026-01-03 20:30:18,001 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_634ef5e7 with NetworkScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 20:31:22,179 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:31:37,861 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='79.125.84.16', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:31:37,861 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:31:44,975 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:31:44,975 - scanners.NETWORK.plcscan_scanner - INFO - Starting PLC scan on 0a020063048e87c282a37e2d00940014.web-security-academy.net
+2026-01-03 20:32:05,535 - scanners.cve_enhancement - INFO - Enhanced 1/1 findings with CVE data
+2026-01-03 20:32:05,537 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:32:10,669 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:32:10,669 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage', 'nmap_results', 'whois_results', 'ssl_results', 'plc_results', 'raw_data']
+2026-01-03 20:32:10,670 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['NetworkScanner']
+2026-01-03 20:32:10,678 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:32:10,680 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NetworkScanner' marked as completed (414 total)
+2026-01-03 20:32:10,681 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:32:10,681 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_634ef5e7 completed successfully in 112.67s with 10 findings
+2026-01-03 20:32:10,682 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_293d937e with SSLLabsScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 20:32:23,317 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='79.125.84.16', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:32:23,318 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:32:30,843 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:32:30,845 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'port', 'findings', 'scan_method', 'raw_data']
+2026-01-03 20:32:30,845 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['scan_method', 'domain', 'port', 'timestamp', 'sslyze_results']
+2026-01-03 20:32:30,941 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:32:30,945 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSLLabsScanner' marked as completed (418 total)
+2026-01-03 20:32:30,947 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:32:30,948 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_293d937e completed successfully in 20.16s with 6 findings
+2026-01-03 20:32:30,949 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_227149f7 with WHOISScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 20:32:33,305 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'domain_info', 'privacy_protected', 'raw_data']
+2026-01-03 20:32:33,307 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['raw_whois_output', 'timestamp']
+2026-01-03 20:32:33,312 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:32:33,313 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WHOISScanner' marked as completed (419 total)
+2026-01-03 20:32:33,314 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:32:33,315 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_227149f7 completed successfully in 2.36s with 1 findings
+2026-01-03 20:32:33,315 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c522fcfc with SSHAuditScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 20:32:33,317 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:32:38,440 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:32:38,442 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'error', 'findings', 'raw_data']
+2026-01-03 20:32:38,443 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['error', 'raw_output', 'stderr', 'timestamp']
+2026-01-03 20:32:38,449 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:32:38,453 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSHAuditScanner' marked as completed (420 total)
+2026-01-03 20:32:38,455 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:32:38,456 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c522fcfc completed successfully in 5.13s with 0 findings
+2026-01-03 20:32:38,456 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_39d9926a with NetworkScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 20:34:18,678 - scanners.cve_enhancement - INFO - Enhanced 3/3 findings with CVE data
+2026-01-03 20:34:41,861 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='79.125.84.16', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:34:41,863 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:34:52,250 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:34:52,250 - scanners.NETWORK.plcscan_scanner - INFO - Starting PLC scan on 0a020063048e87c282a37e2d00940014.web-security-academy.net
+2026-01-03 20:35:12,846 - scanners.cve_enhancement - INFO - Enhanced 1/1 findings with CVE data
+2026-01-03 20:35:12,848 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:35:17,976 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:35:17,977 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage', 'nmap_results', 'whois_results', 'ssl_results', 'plc_results', 'raw_data']
+2026-01-03 20:35:17,979 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['NetworkScanner']
+2026-01-03 20:35:18,029 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:35:18,031 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NetworkScanner' marked as completed (429 total)
+2026-01-03 20:35:18,032 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:35:18,032 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_39d9926a completed successfully in 159.52s with 11 findings
+2026-01-03 20:35:18,033 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2ef3ff50 with SSLLabsScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 20:35:30,846 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='79.125.84.16', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:35:30,847 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:35:40,231 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:35:40,232 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'port', 'findings', 'scan_method', 'raw_data']
+2026-01-03 20:35:40,233 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['scan_method', 'domain', 'port', 'timestamp', 'sslyze_results']
+2026-01-03 20:35:40,322 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:35:40,325 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSLLabsScanner' marked as completed (431 total)
+2026-01-03 20:35:40,327 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:35:40,328 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2ef3ff50 completed successfully in 22.20s with 6 findings
+2026-01-03 20:35:40,329 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4a93dec1 with WHOISScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 20:35:42,700 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'domain_info', 'privacy_protected', 'raw_data']
+2026-01-03 20:35:42,701 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['raw_whois_output', 'timestamp']
+2026-01-03 20:35:42,711 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:35:42,712 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WHOISScanner' marked as completed (432 total)
+2026-01-03 20:35:42,714 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:35:42,714 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4a93dec1 completed successfully in 2.37s with 1 findings
+2026-01-03 20:35:42,715 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_165639fb with SSHAuditScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 20:35:42,717 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:35:47,842 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:35:47,843 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'error', 'findings', 'raw_data']
+2026-01-03 20:35:47,843 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['error', 'raw_output', 'stderr', 'timestamp']
+2026-01-03 20:35:47,847 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:35:47,849 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSHAuditScanner' marked as completed (433 total)
+2026-01-03 20:35:47,850 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:35:47,850 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_165639fb completed successfully in 5.13s with 0 findings
+2026-01-03 20:35:47,851 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6fa58c01 with NetworkScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 20:39:50,336 - scanners.cve_enhancement - INFO - Enhanced 3/3 findings with CVE data
+2026-01-03 20:40:05,314 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='79.125.84.16', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:40:05,316 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:40:24,032 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:40:24,035 - scanners.NETWORK.plcscan_scanner - INFO - Starting PLC scan on 0a020063048e87c282a37e2d00940014.web-security-academy.net
+2026-01-03 20:40:46,377 - scanners.cve_enhancement - INFO - Enhanced 1/1 findings with CVE data
+2026-01-03 20:40:46,384 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:40:51,621 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:40:51,622 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage', 'nmap_results', 'whois_results', 'ssl_results', 'plc_results', 'raw_data']
+2026-01-03 20:40:51,624 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['NetworkScanner']
+2026-01-03 20:40:51,649 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:40:51,652 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NetworkScanner' marked as completed (447 total)
+2026-01-03 20:40:51,655 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:40:51,658 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6fa58c01 completed successfully in 303.77s with 11 findings
+2026-01-03 20:40:51,660 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_731d6239 with SSLLabsScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 20:41:03,836 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='34.246.129.62', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:41:03,839 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:41:21,096 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:41:21,097 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'port', 'findings', 'scan_method', 'raw_data']
+2026-01-03 20:41:21,098 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['scan_method', 'domain', 'port', 'timestamp', 'sslyze_results']
+2026-01-03 20:41:21,201 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:41:21,207 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSLLabsScanner' marked as completed (448 total)
+2026-01-03 20:41:21,210 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:41:21,213 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_731d6239 completed successfully in 29.44s with 6 findings
+2026-01-03 20:41:21,215 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_dea64436 with WHOISScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 20:41:23,504 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'domain_info', 'privacy_protected', 'raw_data']
+2026-01-03 20:41:23,507 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['raw_whois_output', 'timestamp']
+2026-01-03 20:41:23,522 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:41:23,526 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WHOISScanner' marked as completed (449 total)
+2026-01-03 20:41:23,531 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:41:23,533 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_dea64436 completed successfully in 2.29s with 1 findings
+2026-01-03 20:41:23,536 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_64bcb744 with SSHAuditScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 20:41:23,542 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:41:28,760 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:41:28,762 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'error', 'findings', 'raw_data']
+2026-01-03 20:41:28,763 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['error', 'raw_output', 'stderr', 'timestamp']
+2026-01-03 20:41:28,770 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:41:28,773 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSHAuditScanner' marked as completed (451 total)
+2026-01-03 20:41:28,776 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:41:28,779 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_64bcb744 completed successfully in 5.22s with 0 findings
+2026-01-03 20:41:28,782 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d7d1bf4f with NetworkScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+2026-01-03 20:45:12,228 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:45:27,410 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='79.125.84.16', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:45:27,412 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:45:43,347 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:45:43,349 - scanners.NETWORK.plcscan_scanner - INFO - Starting PLC scan on 0a020063048e87c282a37e2d00940014.web-security-academy.net
+2026-01-03 20:46:05,216 - scanners.cve_enhancement - INFO - Enhanced 1/1 findings with CVE data
+2026-01-03 20:46:05,223 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:46:10,455 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:46:10,458 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage', 'nmap_results', 'whois_results', 'ssl_results', 'plc_results', 'raw_data']
+2026-01-03 20:46:10,461 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['NetworkScanner']
+2026-01-03 20:46:10,485 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:46:10,489 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NetworkScanner' marked as completed (468 total)
+2026-01-03 20:46:10,493 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:46:10,495 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d7d1bf4f completed successfully in 281.68s with 10 findings
+2026-01-03 20:46:10,498 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f9e91176 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 20:48:01,764 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:48:01,765 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:48:01,766 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:48:01,872 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:48:01,882 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (472 total)
+2026-01-03 20:48:01,890 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:48:01,893 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f9e91176 completed successfully in 111.23s with 2 findings
+2026-01-03 20:48:01,896 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_11d9e52a with SSLLabsScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 20:48:18,642 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='79.125.84.16', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:48:18,644 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:48:35,357 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:48:35,362 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'port', 'findings', 'scan_method', 'raw_data']
+2026-01-03 20:48:35,365 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['scan_method', 'domain', 'port', 'timestamp', 'sslyze_results']
+2026-01-03 20:48:35,472 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:48:35,484 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSLLabsScanner' marked as completed (474 total)
+2026-01-03 20:48:35,492 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:48:35,497 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_11d9e52a completed successfully in 33.47s with 6 findings
+2026-01-03 20:48:35,503 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_48e3dfb7 with WHOISScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 20:48:38,101 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'domain_info', 'privacy_protected', 'raw_data']
+2026-01-03 20:48:38,102 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['raw_whois_output', 'timestamp']
+2026-01-03 20:48:38,113 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:48:38,118 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WHOISScanner' marked as completed (475 total)
+2026-01-03 20:48:38,121 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:48:38,124 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_48e3dfb7 completed successfully in 2.60s with 1 findings
+2026-01-03 20:48:38,126 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3529318d with SSHAuditScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 20:48:38,132 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:48:43,389 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:48:43,390 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'error', 'findings', 'raw_data']
+2026-01-03 20:48:43,392 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['error', 'raw_output', 'stderr', 'timestamp']
+2026-01-03 20:48:43,407 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:48:43,412 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSHAuditScanner' marked as completed (476 total)
+2026-01-03 20:48:43,415 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:48:43,418 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3529318d completed successfully in 5.26s with 0 findings
+2026-01-03 20:48:43,420 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_876efb01 with NetworkScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+2026-01-03 20:52:15,319 - scanners.cve_enhancement - INFO - Enhanced 3/3 findings with CVE data
+2026-01-03 20:52:29,852 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='79.125.84.16', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:52:29,853 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:52:37,965 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:52:37,966 - scanners.NETWORK.plcscan_scanner - INFO - Starting PLC scan on 0a020063048e87c282a37e2d00940014.web-security-academy.net
+2026-01-03 20:52:58,458 - scanners.cve_enhancement - INFO - Enhanced 1/1 findings with CVE data
+2026-01-03 20:52:58,461 - scanners.NETWORK.ssh_audit_scanner - INFO - Starting SSH audit on 0a020063048e87c282a37e2d00940014.web-security-academy.net:22
+2026-01-03 20:53:03,587 - scanners.NETWORK.ssh_audit_scanner - ERROR - No valid JSON found in ssh-audit output: No valid JSON found in stdout
+2026-01-03 20:53:03,588 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage', 'nmap_results', 'whois_results', 'ssl_results', 'plc_results', 'raw_data']
+2026-01-03 20:53:03,588 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['NetworkScanner']
+2026-01-03 20:53:03,601 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:53:03,604 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NetworkScanner' marked as completed (487 total)
+2026-01-03 20:53:03,607 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:53:03,608 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_876efb01 completed successfully in 260.17s with 11 findings
+2026-01-03 20:53:03,609 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_99d33439 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 20:57:05,103 - scanners.cve_enhancement - INFO - Enhanced 3/3 findings with CVE data
+2026-01-03 20:57:05,104 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:57:05,104 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:57:05,195 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:57:05,197 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (497 total)
+2026-01-03 20:57:05,198 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:57:05,199 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_99d33439 completed successfully in 241.47s with 3 findings
+2026-01-03 20:57:05,200 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_444baae8 with NmapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+2026-01-03 20:58:28,093 - scanners.cve_enhancement - INFO - Enhanced 2/2 findings with CVE data
+2026-01-03 20:58:28,093 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'scan_type', 'findings', 'vulnerability_summary', 'scan_metadata', 'raw_data']
+2026-01-03 20:58:28,093 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['nmap', 'scan']
+2026-01-03 20:58:28,182 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:58:28,183 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NmapScanner' marked as completed (499 total)
+2026-01-03 20:58:28,184 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:58:28,185 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_444baae8 completed successfully in 82.86s with 2 findings
+2026-01-03 20:58:28,185 - ScannerWorker_network_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_65907f3e with SSLLabsScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+2026-01-03 20:58:40,804 - sslyze.plugins.http_headers_plugin - INFO - Retrieving HTTP headers from ServerConnectivityInfo(server_location=ServerNetworkLocation(hostname='0a020063048e87c282a37e2d00940014.web-security-academy.net', port=443, ip_address='34.246.129.62', http_proxy_settings=None), network_configuration=ServerNetworkConfiguration(tls_server_name_indication='0a020063048e87c282a37e2d00940014.web-security-academy.net', tls_opportunistic_encryption=None, tls_client_auth_credentials=None, xmpp_to_hostname=None, smtp_ehlo_hostname=None, http_user_agent=None, network_timeout=5, network_max_retries=3), tls_probing_result=ServerTlsProbingResult(highest_tls_version_supported=<TlsVersionEnum.TLS_1_2: 5>, cipher_suite_supported='ECDHE-RSA-AES128-GCM-SHA256', client_auth_requirement=<ClientAuthRequirementEnum.DISABLED: 'DISABLED'>, supports_ecdh_key_exchange=True))
+2026-01-03 20:58:40,804 - sslyze.plugins.http_headers_plugin - INFO - Sending HTTP request to /
+2026-01-03 20:58:47,720 - scanners.cve_enhancement - INFO - Enhanced 6/6 findings with CVE data
+2026-01-03 20:58:47,720 - ScannerWorker_network_worker_0 - INFO - Worker execution results keys: ['scanner', 'target', 'port', 'findings', 'scan_method', 'raw_data']
+2026-01-03 20:58:47,721 - ScannerWorker_network_worker_0 - INFO - Worker found raw_data with keys: ['scan_method', 'domain', 'port', 'timestamp', 'sslyze_results']
+2026-01-03 20:58:47,809 - ScannerWorker_network_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:58:47,812 - ScannerWorker_network_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SSLLabsScanner' marked as completed (503 total)
+2026-01-03 20:58:47,813 - ScannerWorker_network_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:58:47,814 - ScannerWorker_network_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_65907f3e completed successfully in 19.54s with 6 findings
+2026-01-03 20:58:47,817 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,819 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,821 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,822 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,824 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,826 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,828 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,830 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,832 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,833 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,835 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,836 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,838 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,840 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,842 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,844 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,846 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,848 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,850 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,852 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,854 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,856 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,857 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,859 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,861 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,864 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,865 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,867 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,868 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,870 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,871 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,873 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,875 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,876 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,878 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,880 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,882 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,884 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,885 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,887 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,889 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,890 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,893 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,894 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,896 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,898 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,900 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,901 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,903 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,905 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,906 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,908 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,909 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,911 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,913 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,914 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,916 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,918 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,920 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,921 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,923 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,924 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,926 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,927 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,929 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,931 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,932 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,934 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,935 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,937 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,939 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,940 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,942 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,944 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,946 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,947 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,949 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,950 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,952 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,953 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,955 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,957 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,958 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,960 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,962 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,963 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,965 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,966 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,968 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,969 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,971 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,972 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,974 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,975 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,977 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,979 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,981 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,982 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,984 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,985 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,987 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,988 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,990 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,991 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,993 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,995 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,997 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:47,998 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,000 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,002 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,003 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,005 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,007 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,009 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,011 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,012 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,014 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,015 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,017 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,018 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,020 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,022 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,024 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,026 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,029 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,031 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,032 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,034 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,035 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,037 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,038 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,040 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,041 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,043 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,045 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,046 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,048 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,050 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,052 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,054 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,055 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,057 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,058 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,060 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,062 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,064 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,065 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,067 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,069 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,070 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,072 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,073 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,075 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,077 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,080 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,082 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,084 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,085 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,087 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,089 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,090 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,092 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,094 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,095 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,097 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,099 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,100 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,102 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,103 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,105 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,107 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,108 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,110 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,112 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,114 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,116 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,118 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,120 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,122 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,124 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,126 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,127 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,129 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,131 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,133 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,135 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,136 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,138 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,140 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,142 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,143 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,146 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,148 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,149 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,151 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,153 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,155 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,157 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,158 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,160 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,163 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,165 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,167 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,170 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,171 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,173 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,175 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,177 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,180 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,182 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,185 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,187 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,190 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,193 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,196 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,199 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,202 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,204 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,207 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,210 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,213 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,218 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,221 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,224 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,227 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,231 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,236 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,239 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,241 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,244 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,247 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,252 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,255 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,258 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,260 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,264 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,269 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,271 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,274 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,277 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,280 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,285 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,287 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,290 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,293 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,296 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,299 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,303 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,308 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,311 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,315 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,319 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,323 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,325 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,328 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,332 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,336 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,339 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,342 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,345 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,349 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,354 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,358 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,360 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,363 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,367 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,371 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,373 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,376 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,378 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,382 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,386 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,390 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,393 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,396 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,399 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,403 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,406 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,408 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,410 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,413 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,417 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,421 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,424 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,426 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,429 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,434 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,441 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,445 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,450 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,457 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,461 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,467 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,472 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,477 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,481 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,487 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,493 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,497 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,502 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,507 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,510 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,515 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,520 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,524 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,528 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,533 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,538 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,541 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,544 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,548 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,552 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,555 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,558 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,561 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,564 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,566 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,568 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,570 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,572 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,575 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,577 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,580 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,582 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,584 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,587 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,590 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,594 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,597 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,599 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,601 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,603 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,606 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,609 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,611 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,613 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,615 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,616 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,618 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,620 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,622 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,624 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,626 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,630 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,632 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,633 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,635 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,637 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,638 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,640 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,641 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,643 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,644 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,646 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,647 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,649 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,650 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,652 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,653 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,655 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,656 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,658 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,659 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,660 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,663 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,666 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,669 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,671 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,673 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,674 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,676 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,679 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,680 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,682 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,684 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,686 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,687 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,689 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,692 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,694 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,697 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,699 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,701 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,703 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,705 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,707 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,709 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,711 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,713 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,715 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,717 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,719 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,721 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,724 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,726 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,730 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,732 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,734 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,737 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,738 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,740 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,742 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,743 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,745 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,747 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,748 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,749 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,751 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,752 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,753 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,755 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,756 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,758 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,759 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,761 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,762 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,763 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,765 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,766 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,768 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,770 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,771 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,773 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,774 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,775 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,777 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,779 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,781 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,784 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,786 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,787 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,789 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,791 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,793 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,795 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,797 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,799 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,800 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,802 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,804 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,805 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,807 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,809 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,810 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,812 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,814 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,815 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,817 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,818 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,820 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,821 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,823 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,824 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,826 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,828 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,830 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,832 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,833 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,835 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,837 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,840 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,842 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,843 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,846 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,847 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,849 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,851 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,852 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,853 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,855 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,856 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,858 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,859 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,862 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,863 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,864 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,867 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,868 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,870 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,871 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,873 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,874 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification
+2026-01-03 20:58:48,876 - ScannerWorker_network_worker_0 - INFO - Worker network_worker_0 received task notification

@@ -1,3 +1,791 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08efb9570ce6bb8b9041c07bf6d5248b7bc05a5a37fd229570df2fc29b041540
-size 865
+2026-01-03 19:46:29 - ScannerWorker_recon_discovery_worker_1 - INFO - Imported ReconDiscoveryScanner
+2026-01-03 19:46:29 - ScannerWorker_recon_discovery_worker_1 - INFO - Imported DirbScanner
+2026-01-03 19:46:29 - ScannerWorker_recon_discovery_worker_1 - INFO - Imported MassDNSScanner
+2026-01-03 19:46:29 - ScannerWorker_recon_discovery_worker_1 - INFO - Imported DNSReconScanner
+2026-01-03 19:46:29 - ScannerWorker_recon_discovery_worker_1 - INFO - Imported EyeWitnessScanner
+2026-01-03 19:46:29 - ScannerWorker_recon_discovery_worker_1 - INFO - Loaded 5 scanners for category recon_discovery
+2026-01-03 19:46:29 - ScannerWorker_recon_discovery_worker_1 - INFO - Connected to Redis: redis://localhost:6379/0
+2026-01-03 19:46:29 - ScannerWorker_recon_discovery_worker_1 - INFO - Scanner worker recon_discovery_worker_1 started for category recon_discovery
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_684d17bb with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (4 total)
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER PROGRESS] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: 5/0 scanners completed
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_684d17bb completed successfully in 0.04s with 0 findings
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (15 total)
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_fd57c499 with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (17 total)
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_fd57c499 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2656c05e with DirbScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'raw_data']
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker found raw_data with keys: ['wordlist_used', 'directories_tested', 'timestamp']
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'DirbScanner' marked as completed (165 total)
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 14/4 scanners completed!
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2656c05e completed successfully in 139.00s with 1 findings
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9432e596 with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (166 total)
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 14/4 scanners completed!
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9432e596 completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:09 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5b53877d with DirbScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'raw_data']
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker found raw_data with keys: ['wordlist_used', 'directories_tested', 'timestamp']
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'DirbScanner' marked as completed (181 total)
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 20/4 scanners completed!
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5b53877d completed successfully in 138.17s with 1 findings
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_624d8ccf with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (182 total)
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 20/4 scanners completed!
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_624d8ccf completed successfully in 0.01s with 0 findings
+2026-01-03 19:54:27 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_28de4b62 with DirbScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'raw_data']
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker found raw_data with keys: ['wordlist_used', 'directories_tested', 'timestamp']
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'DirbScanner' marked as completed (195 total)
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_28de4b62 completed successfully in 115.82s with 1 findings
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3041bfa8 with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (196 total)
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3041bfa8 completed successfully in 0.01s with 0 findings
+2026-01-03 19:56:23 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3f1a9b8f with DirbScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'raw_data']
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker found raw_data with keys: ['wordlist_used', 'directories_tested', 'timestamp']
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'DirbScanner' marked as completed (229 total)
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3f1a9b8f completed successfully in 375.52s with 146 findings
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_053b3f24 with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (230 total)
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_053b3f24 completed successfully in 0.00s with 0 findings
+2026-01-03 20:02:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_8c373ad2 with DirbScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'raw_data']
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker found raw_data with keys: ['wordlist_used', 'directories_tested', 'timestamp']
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'DirbScanner' marked as completed (247 total)
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_8c373ad2 completed successfully in 118.25s with 1 findings
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f3bdab9c with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (248 total)
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f3bdab9c completed successfully in 0.00s with 0 findings
+2026-01-03 20:04:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c9aa9a23 with DirbScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'raw_data']
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker found raw_data with keys: ['wordlist_used', 'directories_tested', 'timestamp']
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'DirbScanner' marked as completed (259 total)
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c9aa9a23 completed successfully in 117.91s with 1 findings
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_74cd42be with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (260 total)
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_74cd42be completed successfully in 0.01s with 0 findings
+2026-01-03 20:06:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d24d142b with DirbScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'raw_data']
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker found raw_data with keys: ['wordlist_used', 'directories_tested', 'timestamp']
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'DirbScanner' marked as completed (270 total)
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d24d142b completed successfully in 120.20s with 1 findings
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_dd9e954b with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (271 total)
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_dd9e954b completed successfully in 0.00s with 0 findings
+2026-01-03 20:08:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ddd07b14 with DirbScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'raw_data']
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker found raw_data with keys: ['wordlist_used', 'directories_tested', 'timestamp']
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'DirbScanner' marked as completed (288 total)
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ddd07b14 completed successfully in 152.85s with 1 findings
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_41635109 with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (289 total)
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_41635109 completed successfully in 0.07s with 0 findings
+2026-01-03 20:11:08 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_27464bc7 with DirbScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 20:13:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'raw_data']
+2026-01-03 20:13:35 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker found raw_data with keys: ['wordlist_used', 'directories_tested', 'timestamp']
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'DirbScanner' marked as completed (304 total)
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_27464bc7 completed successfully in 146.99s with 1 findings
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_99cf1303 with ReconDiscoveryScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (305 total)
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_99cf1303 completed successfully in 0.00s with 0 findings
+2026-01-03 20:13:36 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1c89ad03 with DirbScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'raw_data']
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker found raw_data with keys: ['wordlist_used', 'directories_tested', 'timestamp']
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'DirbScanner' marked as completed (316 total)
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1c89ad03 completed successfully in 121.69s with 1 findings
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (317 total)
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.02s with 0 findings
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (318 total)
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (319 total)
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:37 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.02s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (320 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (321 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.02s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (322 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (323 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (324 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.02s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (325 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (326 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (327 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.02s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (328 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (329 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (330 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (331 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.02s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (332 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.02s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (333 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (334 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (335 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (336 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Processing task None with recon_discovery on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'discovered_assets', 'findings', 'scanner_results', 'errors']
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'ReconDiscoveryScanner' marked as completed (337 total)
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:38 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:39 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:40 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification
+2026-01-03 20:15:41 - ScannerWorker_recon_discovery_worker_1 - INFO - Worker recon_discovery_worker_1 received task notification

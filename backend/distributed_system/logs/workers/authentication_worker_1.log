@@ -1,3 +1,637 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bc8e1ee44a37d42900d63376a5e2e0fb20e45b044098a147ece0d9f11fe84ee
-size 675
+2026-01-03 19:46:30 - ScannerWorker_authentication_worker_1 - INFO - Imported AuthSessionScanner
+2026-01-03 19:46:30 - ScannerWorker_authentication_worker_1 - INFO - Imported AuthenticationSessionScanner
+2026-01-03 19:46:30 - ScannerWorker_authentication_worker_1 - INFO - Imported WPSekuScanner
+2026-01-03 19:46:30 - ScannerWorker_authentication_worker_1 - INFO - Loaded 3 scanners for category authentication
+2026-01-03 19:46:30 - ScannerWorker_authentication_worker_1 - INFO - Connected to Redis: redis://localhost:6379/0
+2026-01-03 19:46:30 - ScannerWorker_authentication_worker_1 - INFO - Scanner worker authentication_worker_1 started for category authentication
+2026-01-03 19:49:46 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_21133d6b with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:54:12 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 19:54:12 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:54:12 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:54:12 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (177 total)
+2026-01-03 19:54:12 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 20/4 scanners completed!
+2026-01-03 19:54:12 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_21133d6b completed successfully in 265.88s with 8 findings
+2026-01-03 19:54:12 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_8e1ac46d with WPSekuScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+2026-01-03 19:54:13 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'findings']
+2026-01-03 19:54:13 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:54:13 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:54:13 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WPSekuScanner' marked as completed (178 total)
+2026-01-03 19:54:13 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 20/4 scanners completed!
+2026-01-03 19:54:13 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_8e1ac46d completed successfully in 1.27s with 0 findings
+2026-01-03 19:54:13 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_394b709e with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 19:57:07 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 19:57:07 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:57:07 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:57:07 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (205 total)
+2026-01-03 19:57:07 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 19:57:07 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_394b709e completed successfully in 173.25s with 7 findings
+2026-01-03 19:57:07 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1b0a722f with WPSekuScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+2026-01-03 19:57:08 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'findings']
+2026-01-03 19:57:08 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:57:08 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:57:08 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WPSekuScanner' marked as completed (206 total)
+2026-01-03 19:57:08 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 19:57:08 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1b0a722f completed successfully in 0.94s with 0 findings
+2026-01-03 19:57:08 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3d2d2d5b with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+2026-01-03 20:01:45 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 20:01:45 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:01:45 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:01:45 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (224 total)
+2026-01-03 20:01:45 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:01:45 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3d2d2d5b completed successfully in 276.90s with 7 findings
+2026-01-03 20:01:45 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_cb97d0f9 with WPSekuScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 20:01:46 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'findings']
+2026-01-03 20:01:46 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:01:46 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:01:46 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WPSekuScanner' marked as completed (225 total)
+2026-01-03 20:01:46 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:01:46 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_cb97d0f9 completed successfully in 1.47s with 0 findings
+2026-01-03 20:01:46 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9e0f508d with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 20:04:41 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 20:04:41 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:04:41 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:04:41 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (249 total)
+2026-01-03 20:04:41 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:04:41 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9e0f508d completed successfully in 175.17s with 6 findings
+2026-01-03 20:04:41 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2fd0b586 with WPSekuScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+2026-01-03 20:04:42 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'findings']
+2026-01-03 20:04:42 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:04:42 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:04:42 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WPSekuScanner' marked as completed (250 total)
+2026-01-03 20:04:42 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:04:42 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2fd0b586 completed successfully in 0.91s with 0 findings
+2026-01-03 20:04:42 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0d22377e with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+2026-01-03 20:07:32 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 20:07:32 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:07:32 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:07:32 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (267 total)
+2026-01-03 20:07:32 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:07:32 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0d22377e completed successfully in 169.53s with 6 findings
+2026-01-03 20:07:32 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ddb92a82 with WPSekuScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 20:07:33 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'findings']
+2026-01-03 20:07:33 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:07:33 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:07:33 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WPSekuScanner' marked as completed (268 total)
+2026-01-03 20:07:33 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:07:33 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ddb92a82 completed successfully in 0.91s with 0 findings
+2026-01-03 20:07:33 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_38f13129 with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+2026-01-03 20:11:16 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 20:11:16 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:11:16 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:11:16 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (290 total)
+2026-01-03 20:11:16 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:11:16 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_38f13129 completed successfully in 222.65s with 5 findings
+2026-01-03 20:11:16 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a7e7eeba with WPSekuScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 20:11:17 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'findings']
+2026-01-03 20:11:17 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:11:17 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:11:17 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WPSekuScanner' marked as completed (292 total)
+2026-01-03 20:11:17 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:11:17 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a7e7eeba completed successfully in 0.92s with 0 findings
+2026-01-03 20:11:17 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_726a7612 with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 20:14:50 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 20:14:50 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:14:51 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:14:51 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (314 total)
+2026-01-03 20:14:51 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:14:51 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_726a7612 completed successfully in 213.74s with 6 findings
+2026-01-03 20:14:51 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c625df7f with WPSekuScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 20:14:52 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'findings']
+2026-01-03 20:14:52 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:14:52 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:14:52 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WPSekuScanner' marked as completed (315 total)
+2026-01-03 20:14:52 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:14:52 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c625df7f completed successfully in 1.48s with 0 findings
+2026-01-03 20:14:52 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_acd8d881 with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 20:18:00 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 20:18:00 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:18:00 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:18:00 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (354 total)
+2026-01-03 20:18:00 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:18:00 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_acd8d881 completed successfully in 188.13s with 6 findings
+2026-01-03 20:18:00 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e468da40 with WPSekuScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 20:18:03 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'findings']
+2026-01-03 20:18:03 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:18:03 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:18:03 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WPSekuScanner' marked as completed (355 total)
+2026-01-03 20:18:03 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:18:03 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e468da40 completed successfully in 2.28s with 0 findings
+2026-01-03 20:18:03 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4a1422a4 with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+2026-01-03 20:21:20 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 20:21:20 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:21:20 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:21:20 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (366 total)
+2026-01-03 20:21:20 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:21:20 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4a1422a4 completed successfully in 197.54s with 6 findings
+2026-01-03 20:21:20 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e1c7cbd2 with WPSekuScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 20:21:23 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'findings']
+2026-01-03 20:21:23 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:21:23 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:21:23 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WPSekuScanner' marked as completed (367 total)
+2026-01-03 20:21:23 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:21:23 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e1c7cbd2 completed successfully in 2.27s with 0 findings
+2026-01-03 20:21:23 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7146129d with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+2026-01-03 20:25:03 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 20:25:03 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:25:03 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:25:03 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (384 total)
+2026-01-03 20:25:03 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:25:03 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7146129d completed successfully in 220.70s with 7 findings
+2026-01-03 20:25:03 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6009fffd with WPSekuScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 20:25:04 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'findings']
+2026-01-03 20:25:04 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:25:04 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:25:04 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'WPSekuScanner' marked as completed (385 total)
+2026-01-03 20:25:04 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:25:04 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6009fffd completed successfully in 1.03s with 0 findings
+2026-01-03 20:25:04 - ScannerWorker_authentication_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1b1e07c4 with AuthSessionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'timestamp', 'findings', 'summary', 'asvs_compliance', 'recommendations', 'authenticated_cookies']
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'AuthSessionScanner' marked as completed (403 total)
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1b1e07c4 completed successfully in 189.13s with 6 findings
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification
+2026-01-03 20:28:14 - ScannerWorker_authentication_worker_1 - INFO - Worker authentication_worker_1 received task notification

@@ -1,3 +1,624 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07f78e10be6de26f52b2f1bff2a9eed822cefe3c8b15a2eb320baf917ed81108
-size 754
+2026-01-03 19:46:38 - ScannerWorker_file_upload_worker_0 - INFO - Imported FileUploadScanner
+2026-01-03 19:46:39 - ScannerWorker_file_upload_worker_0 - INFO - Imported UnrestrictedUploadScanner
+2026-01-03 19:46:39 - ScannerWorker_file_upload_worker_0 - INFO - Imported MaliciousFileScanner
+2026-01-03 19:46:39 - ScannerWorker_file_upload_worker_0 - INFO - Imported PathTraversalUploadScanner
+2026-01-03 19:46:39 - ScannerWorker_file_upload_worker_0 - INFO - Loaded 4 scanners for category file_upload
+2026-01-03 19:46:39 - ScannerWorker_file_upload_worker_0 - INFO - Connected to Redis: redis://localhost:6379/0
+2026-01-03 19:46:39 - ScannerWorker_file_upload_worker_0 - INFO - Scanner worker file_upload_worker_0 started for category file_upload
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ee0f0d0f with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (3 total)
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER PROGRESS] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: 3/0 scanners completed
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ee0f0d0f completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_442d74fd with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (20 total)
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_442d74fd completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a01a0989 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (22 total)
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a01a0989 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_11d877c8 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (24 total)
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_11d877c8 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5b694b98 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (26 total)
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5b694b98 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4f15c655 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (28 total)
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4f15c655 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1c8922d1 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (30 total)
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1c8922d1 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:50 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f9b8825e with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (34 total)
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f9b8825e completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_46d6d189 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (36 total)
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_46d6d189 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5677b017 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (38 total)
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5677b017 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3a6c5a11 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (40 total)
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3a6c5a11 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:52 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:53 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_fcb177aa with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (43 total)
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_fcb177aa completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:54 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_de4a4f5f with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (45 total)
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_de4a4f5f completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_31b11cbd with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (47 total)
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_31b11cbd completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ef06b94e with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (49 total)
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ef06b94e completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_dd2a8034 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (51 total)
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_dd2a8034 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:55 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7b1175fe with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (54 total)
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7b1175fe completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c4a23285 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (56 total)
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c4a23285 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1ed0d4cb with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (58 total)
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1ed0d4cb completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:57 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3c6d851f with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (60 total)
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3c6d851f completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f4fbd2d9 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (62 total)
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f4fbd2d9 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3bed2e22 with FileUploadScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'FileUploadScanner' marked as completed (64 total)
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3bed2e22 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification
+2026-01-03 19:49:59 - ScannerWorker_file_upload_worker_0 - INFO - Worker file_upload_worker_0 received task notification

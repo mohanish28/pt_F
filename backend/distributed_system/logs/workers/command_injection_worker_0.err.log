@@ -1,3 +1,644 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc8b59522ece67282a4e5dc782f9232dab2bc478e132d749a11f7a9bfd0a345a
-size 615
+2026-01-03 19:46:35,542 - ScannerWorker_command_injection_worker_0 - INFO - Imported CommandOSInjectionScanner
+2026-01-03 19:46:35,771 - ScannerWorker_command_injection_worker_0 - INFO - Imported HTTPXProbe
+2026-01-03 19:46:35,877 - ScannerWorker_command_injection_worker_0 - INFO - Loaded 2 scanners for category command_injection
+2026-01-03 19:46:35,999 - ScannerWorker_command_injection_worker_0 - INFO - Connected to Redis: redis://localhost:6379/0
+2026-01-03 19:46:36,128 - ScannerWorker_command_injection_worker_0 - INFO - Scanner worker command_injection_worker_0 started for category command_injection
+2026-01-03 19:49:46,530 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,540 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,551 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,556 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,566 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,572 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,579 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,588 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,594 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,602 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,607 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,614 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,619 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,623 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_71b33782 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:49:46,624 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:49:46,626 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:46,627 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:46,638 - ScannerWorker_command_injection_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:49:46,643 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (1 total)
+2026-01-03 19:49:46,650 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER PROGRESS] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: 2/0 scanners completed
+2026-01-03 19:49:46,651 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_71b33782 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:46,656 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,661 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,668 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,673 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,680 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,686 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,693 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,701 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:46,708 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,279 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,285 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,288 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,292 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,296 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,301 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,305 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,310 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,314 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,319 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,324 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,327 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,328 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_44727494 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:49:50,329 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:49:50,330 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:50,330 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50,341 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (18 total)
+2026-01-03 19:49:50,343 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50,345 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_44727494 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:50,349 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,353 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,357 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,361 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,365 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,369 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,374 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,379 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,383 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,388 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,392 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,397 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,398 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_781ac592 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+2026-01-03 19:49:50,399 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+2026-01-03 19:49:50,400 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:50,400 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50,412 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (21 total)
+2026-01-03 19:49:50,414 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50,416 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_781ac592 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:50,420 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,424 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,428 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,431 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,436 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,440 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,445 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,449 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,455 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,460 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,468 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,471 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2db36158 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 19:49:50,471 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 19:49:50,472 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:50,472 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50,488 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (23 total)
+2026-01-03 19:49:50,493 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50,495 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2db36158 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:50,505 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,509 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,514 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,518 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,525 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,528 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,533 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,538 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,539 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6836b253 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+2026-01-03 19:49:50,540 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+2026-01-03 19:49:50,544 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:50,545 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50,559 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (25 total)
+2026-01-03 19:49:50,561 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50,563 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6836b253 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50,567 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,571 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,576 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,581 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,586 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,590 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,595 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,599 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,601 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0c4766bc with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+2026-01-03 19:49:50,602 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+2026-01-03 19:49:50,602 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:50,603 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50,614 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (27 total)
+2026-01-03 19:49:50,617 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50,619 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0c4766bc completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:50,623 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,627 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,631 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,635 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,639 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,643 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,647 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,652 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,653 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_306407ac with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 19:49:50,654 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 19:49:50,654 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:50,655 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50,664 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (29 total)
+2026-01-03 19:49:50,667 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50,668 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_306407ac completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:50,670 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,674 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,676 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,680 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,683 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,687 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,690 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,693 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,696 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,699 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,702 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,705 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,708 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,712 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,715 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,718 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,722 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,725 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,727 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,731 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,734 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,737 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,740 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,743 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,746 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,749 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,752 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,756 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,758 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,762 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,765 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,769 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,772 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,775 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,778 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,782 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,785 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,788 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,791 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,794 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,797 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,801 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,805 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,808 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,811 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,815 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,819 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,822 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,825 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,827 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,831 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,834 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,837 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,840 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,843 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,847 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,850 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,852 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,855 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,858 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,861 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,865 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,868 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,871 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,874 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,877 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,881 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,884 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,887 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,889 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,892 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,895 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:50,898 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,668 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,672 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,676 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,681 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,685 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,688 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,692 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,696 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,700 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,703 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,707 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,710 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,714 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,716 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7d2c7830 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 19:49:52,716 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 19:49:52,717 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:52,718 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:52,727 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (33 total)
+2026-01-03 19:49:52,729 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:52,731 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7d2c7830 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:52,734 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,737 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,741 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,746 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,750 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,754 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,757 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,761 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,765 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,768 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,770 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d711a61b with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+2026-01-03 19:49:52,771 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+2026-01-03 19:49:52,771 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:52,772 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:52,782 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (35 total)
+2026-01-03 19:49:52,784 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:52,785 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d711a61b completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:52,789 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,792 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,796 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,800 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,804 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,807 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,811 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,815 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,816 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c5bb2eba with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+2026-01-03 19:49:52,817 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+2026-01-03 19:49:52,818 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:52,818 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:52,830 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (37 total)
+2026-01-03 19:49:52,832 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:52,834 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c5bb2eba completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:52,838 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,842 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,846 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,851 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,854 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,858 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,867 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,871 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,875 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,877 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_cbc11a20 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 19:49:52,878 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 19:49:52,878 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:52,879 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:52,890 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (39 total)
+2026-01-03 19:49:52,892 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:52,894 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_cbc11a20 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:52,898 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,902 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,905 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,909 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,913 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,916 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,921 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,924 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,928 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,931 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,935 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,939 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,942 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,946 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,950 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,954 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,957 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,960 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,963 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,966 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,970 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,973 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,976 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,980 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,983 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,987 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,990 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,993 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,996 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:52,999 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,001 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,003 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,005 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,008 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,010 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,012 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,015 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,017 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,020 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,022 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,025 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,027 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,029 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,031 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,033 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,036 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,038 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:53,040 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,894 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,899 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,908 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,917 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,923 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,928 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,933 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,938 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,941 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,945 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,949 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,952 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,953 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_cc4b8d17 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+2026-01-03 19:49:54,953 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+2026-01-03 19:49:54,954 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:54,954 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:54,962 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (42 total)
+2026-01-03 19:49:54,964 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:54,965 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_cc4b8d17 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:54,968 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,971 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,975 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,979 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,982 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,986 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,990 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,995 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:54,997 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_b7443e74 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 19:49:54,998 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 19:49:54,998 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:54,999 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:55,009 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (44 total)
+2026-01-03 19:49:55,011 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:55,012 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_b7443e74 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:55,016 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,019 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,022 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,026 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,029 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,032 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,036 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,039 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,041 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f71b5ac0 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 19:49:55,041 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 19:49:55,042 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:55,042 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:55,052 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (46 total)
+2026-01-03 19:49:55,054 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:55,055 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f71b5ac0 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:55,060 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,063 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,067 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,071 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,075 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,078 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,083 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,086 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,088 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c03a1c26 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 19:49:55,089 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 19:49:55,089 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:55,089 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:55,099 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (48 total)
+2026-01-03 19:49:55,101 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:55,102 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c03a1c26 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:55,105 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,108 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,112 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,116 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,121 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,124 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,128 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,132 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,133 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3c0b11a0 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 19:49:55,134 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 19:49:55,134 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:55,135 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:55,144 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (50 total)
+2026-01-03 19:49:55,147 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:55,149 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3c0b11a0 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:55,152 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,155 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,159 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,163 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,166 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,169 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,172 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,175 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,178 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,181 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,183 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,186 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,188 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,190 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,193 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,196 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,200 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,202 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,204 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,207 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,210 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,212 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,215 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,217 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,220 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,223 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,225 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,228 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,231 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,234 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,237 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,240 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,242 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,245 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,248 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,251 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,254 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,256 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,259 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,261 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,264 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,267 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,269 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,272 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,275 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,277 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,279 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,281 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,283 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,286 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,289 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,291 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,293 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,295 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,297 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,298 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,301 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,303 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,306 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,307 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,310 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,313 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,315 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,317 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,320 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:55,322 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,147 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,152 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,159 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,165 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,170 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,173 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,177 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,181 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,185 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,190 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,194 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,196 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f747a4b8 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 19:49:57,197 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 19:49:57,197 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:57,198 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:57,210 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (53 total)
+2026-01-03 19:49:57,213 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:57,215 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f747a4b8 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:57,218 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,221 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,224 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,228 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,232 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,236 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,239 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,242 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,246 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,248 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4129d215 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+2026-01-03 19:49:57,249 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+2026-01-03 19:49:57,249 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:57,250 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:57,260 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (55 total)
+2026-01-03 19:49:57,262 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:57,264 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4129d215 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:57,268 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,272 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,275 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,279 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,282 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,286 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,289 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,293 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,294 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_caf1fa3d with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 19:49:57,295 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 19:49:57,296 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:57,296 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:57,306 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (57 total)
+2026-01-03 19:49:57,307 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:57,308 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_caf1fa3d completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:57,312 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,315 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,318 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,322 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,325 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,329 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,332 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,335 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,338 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,341 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,344 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,347 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,349 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,352 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,354 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,357 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,360 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,362 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,365 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,368 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,371 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,374 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,377 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,379 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,382 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,385 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,386 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,389 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,391 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,393 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,396 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,397 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,399 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,401 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,404 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,406 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,408 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:57,409 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,310 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,323 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,332 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,344 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,356 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,366 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,373 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,380 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,384 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,388 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,392 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,393 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1af6c02e with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+2026-01-03 19:49:59,394 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+2026-01-03 19:49:59,394 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:59,395 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:59,406 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (59 total)
+2026-01-03 19:49:59,408 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:59,410 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1af6c02e completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:59,414 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,417 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,421 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,425 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,428 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,432 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,436 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,440 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,442 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_b291e029 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 19:49:59,443 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 19:49:59,443 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:59,444 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:59,454 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (61 total)
+2026-01-03 19:49:59,456 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:59,457 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_b291e029 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:59,460 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,464 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,468 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,472 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,475 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,478 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,482 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,486 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,490 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,491 - ScannerWorker_command_injection_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_132a9f13 with CommandOSInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+2026-01-03 19:49:59,491 - scanners.command_os_injection.command_injection_scanner - INFO - Starting advanced command injection scan on: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+2026-01-03 19:49:59,492 - ScannerWorker_command_injection_worker_0 - INFO - Worker execution results keys: ['findings', 'summary', 'scan_metadata', 'technical_metrics', 'owasp_categories']
+2026-01-03 19:49:59,493 - ScannerWorker_command_injection_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:59,501 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommandOSInjectionScanner' marked as completed (63 total)
+2026-01-03 19:49:59,503 - ScannerWorker_command_injection_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:49:59,504 - ScannerWorker_command_injection_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_132a9f13 completed successfully in 0.00s with 0 findings
+2026-01-03 19:49:59,507 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,510 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,512 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,515 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,518 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,520 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,522 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,525 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,527 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,530 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,533 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,536 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,538 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,540 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,543 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,546 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,550 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,555 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,559 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,562 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,566 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,570 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,573 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,576 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,580 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,584 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,587 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,588 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,590 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,592 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,593 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,595 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,597 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,599 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,601 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,603 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,604 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification
+2026-01-03 19:49:59,606 - ScannerWorker_command_injection_worker_0 - INFO - Worker command_injection_worker_0 received task notification

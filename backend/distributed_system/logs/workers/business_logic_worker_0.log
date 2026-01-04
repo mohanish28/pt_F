@@ -1,3 +1,1436 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29f05dfb94033657836f8dbe08259aa12f1cda78eb5db24acb9ca793f51e2e32
-size 675
+2026-01-03 19:46:39 - ScannerWorker_business_logic_worker_0 - INFO - Imported BusinessLogicScanner
+2026-01-03 19:46:39 - ScannerWorker_business_logic_worker_0 - INFO - Imported PaymentLogicScanner
+2026-01-03 19:46:40 - ScannerWorker_business_logic_worker_0 - INFO - Imported WorkflowAbuseScanner
+2026-01-03 19:46:40 - ScannerWorker_business_logic_worker_0 - INFO - Loaded 3 scanners for category business_logic
+2026-01-03 19:46:40 - ScannerWorker_business_logic_worker_0 - INFO - Connected to Redis: redis://localhost:6379/0
+2026-01-03 19:46:40 - ScannerWorker_business_logic_worker_0 - INFO - Scanner worker business_logic_worker_0 started for category business_logic
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_22d9aa16 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+Timestamp: 2026-01-03 19:49:46
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 19:53:54 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 19:53:54 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:53:54 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:53:54 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (176 total)
+2026-01-03 19:53:54 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 20/4 scanners completed!
+2026-01-03 19:53:54 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_22d9aa16 completed successfully in 247.46s with 0 findings
+2026-01-03 19:53:54 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4b5671a6 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+Timestamp: 2026-01-03 19:53:54
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 19:57:03 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 19:57:03 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:57:03 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:57:03 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (203 total)
+2026-01-03 19:57:03 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 19:57:03 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4b5671a6 completed successfully in 189.82s with 0 findings
+2026-01-03 19:57:03 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0d9b097b with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+Timestamp: 2026-01-03 19:57:03
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:01:49 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:01:49 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:01:49 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:01:49 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (226 total)
+2026-01-03 20:01:49 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:01:49 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0d9b097b completed successfully in 286.00s with 0 findings
+2026-01-03 20:01:49 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_51abfc20 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+Timestamp: 2026-01-03 20:01:49
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:04:56 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:04:56 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:04:56 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:04:56 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (251 total)
+2026-01-03 20:04:56 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:04:56 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_51abfc20 completed successfully in 186.53s with 0 findings
+2026-01-03 20:04:56 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9016278b with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+Timestamp: 2026-01-03 20:04:56
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:08:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:08:01 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:08:01 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:08:01 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (269 total)
+2026-01-03 20:08:01 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:08:01 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9016278b completed successfully in 184.69s with 0 findings
+2026-01-03 20:08:01 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_528f4748 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+Timestamp: 2026-01-03 20:08:01
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:11:58 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:11:58 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:11:58 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:11:58 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (300 total)
+2026-01-03 20:11:58 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:11:58 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_528f4748 completed successfully in 237.57s with 0 findings
+2026-01-03 20:11:58 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_87f047c1 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+Timestamp: 2026-01-03 20:11:58
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:15:45 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:15:45 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:45 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:45 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (338 total)
+2026-01-03 20:15:45 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:45 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_87f047c1 completed successfully in 226.95s with 0 findings
+2026-01-03 20:15:45 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_b550cf3c with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+Timestamp: 2026-01-03 20:15:45
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:18:44 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:18:44 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:18:44 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:18:44 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (357 total)
+2026-01-03 20:18:44 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:18:44 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_b550cf3c completed successfully in 178.76s with 0 findings
+2026-01-03 20:18:44 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4841afc2 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+Timestamp: 2026-01-03 20:18:44
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:22:08 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:22:08 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:22:08 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:22:08 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (370 total)
+2026-01-03 20:22:08 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:22:08 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4841afc2 completed successfully in 203.52s with 0 findings
+2026-01-03 20:22:08 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7df048c1 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+Timestamp: 2026-01-03 20:22:08
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:26:09 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:26:09 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:26:09 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:26:09 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (388 total)
+2026-01-03 20:26:09 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:26:09 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7df048c1 completed successfully in 241.34s with 0 findings
+2026-01-03 20:26:09 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2b5d5d4c with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+Timestamp: 2026-01-03 20:26:09
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:29:18 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:29:18 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:29:18 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:29:18 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (407 total)
+2026-01-03 20:29:18 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:29:18 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2b5d5d4c completed successfully in 189.04s with 0 findings
+2026-01-03 20:29:18 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_123ae000 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+Timestamp: 2026-01-03 20:29:18
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:32:29 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:32:29 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:32:29 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:32:29 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (417 total)
+2026-01-03 20:32:29 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:32:29 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_123ae000 completed successfully in 191.38s with 0 findings
+2026-01-03 20:32:29 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_12b01b7d with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+Timestamp: 2026-01-03 20:32:29
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:35:25 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:35:25 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:35:25 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:35:25 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (430 total)
+2026-01-03 20:35:25 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:35:25 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_12b01b7d completed successfully in 175.89s with 0 findings
+2026-01-03 20:35:25 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7d5d2a69 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+Timestamp: 2026-01-03 20:35:25
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:38:22 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:38:22 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:38:22 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:38:22 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (443 total)
+2026-01-03 20:38:22 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:38:22 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7d5d2a69 completed successfully in 177.10s with 0 findings
+2026-01-03 20:38:22 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9027f4ad with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+Timestamp: 2026-01-03 20:38:22
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:41:27 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:41:27 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:41:27 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:41:27 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (450 total)
+2026-01-03 20:41:27 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:41:27 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9027f4ad completed successfully in 184.57s with 0 findings
+2026-01-03 20:41:27 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5bfee7a0 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+Timestamp: 2026-01-03 20:41:27
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:44:51 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:44:51 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:44:51 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:44:51 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (466 total)
+2026-01-03 20:44:51 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:44:51 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5bfee7a0 completed successfully in 203.48s with 0 findings
+2026-01-03 20:44:51 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6137f99a with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+Timestamp: 2026-01-03 20:44:51
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:48:10 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:48:10 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:48:10 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:48:10 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (473 total)
+2026-01-03 20:48:10 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:48:10 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6137f99a completed successfully in 199.62s with 0 findings
+2026-01-03 20:48:10 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6ccee82c with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+Timestamp: 2026-01-03 20:48:10
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:51:12 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:51:12 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:51:12 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:51:12 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (486 total)
+2026-01-03 20:51:12 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:51:12 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6ccee82c completed successfully in 181.35s with 0 findings
+2026-01-03 20:51:12 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_097b599f with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+Timestamp: 2026-01-03 20:51:12
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:54:03 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:54:03 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:54:03 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:54:03 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (488 total)
+2026-01-03 20:54:03 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:54:03 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_097b599f completed successfully in 171.80s with 0 findings
+2026-01-03 20:54:03 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9fa0a0ac with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+Timestamp: 2026-01-03 20:54:03
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 20:57:09 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 20:57:09 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:57:09 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:57:09 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (498 total)
+2026-01-03 20:57:09 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:57:09 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9fa0a0ac completed successfully in 185.12s with 0 findings
+2026-01-03 20:57:09 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6af45e13 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+Timestamp: 2026-01-03 20:57:09
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 21:00:05 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 21:00:05 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 21:00:05 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 21:00:05 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (504 total)
+2026-01-03 21:00:05 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 21:00:05 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_6af45e13 completed successfully in 176.17s with 0 findings
+2026-01-03 21:00:05 - ScannerWorker_business_logic_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d9e23860 with BusinessLogicScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+
+======================================================================
+BUSINESS LOGIC VULNERABILITY SCANNER
+======================================================================
+Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+Timestamp: 2026-01-03 21:00:05
+======================================================================
+
+[*] Enabled Scanners: 3
+    - Payment Logic
+    - Race Condition
+    - Workflow Abuse
+
+
+[1/3] Running Payment Logic Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+    Attack Vectors: 15+ (price tampering, coupon abuse, etc.)
+    [OK] Payment Logic completed (no vulnerabilities found)
+
+[2/3] Running Race Condition Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+    Parallelism: 20 concurrent requests
+    Test Phases: 8 (double-refund, inventory oversell, etc.)
+    [WARN] Race Condition scanner error: 'BusinessLogicScanner' object has no attribute 'race_scanner_class'
+
+[3/3] Running Workflow Abuse Scanner...
+    Target: https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+    Test Phases: 8 (IDOR, role bypass, out-of-order, etc.)
+    [OK] Workflow Abuse completed (no workflow flaws detected)
+
+======================================================================
+[COMPLETE] Business logic scan finished!
+======================================================================
+Total findings: 0
+Scanners completed: 2/3
+Scanners failed: 1
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker execution results keys: ['target', 'timestamp', 'scanner', 'vulnerabilities', 'findings', 'summary', 'scan_coverage']
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'BusinessLogicScanner' marked as completed (506 total)
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d9e23860 completed successfully in 176.46s with 0 findings
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:01 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification
+2026-01-03 21:03:02 - ScannerWorker_business_logic_worker_0 - INFO - Worker business_logic_worker_0 received task notification

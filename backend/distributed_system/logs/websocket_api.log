@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9ca8fb7b71f0b58bfccccb0c4754e7d7c06c0fc92b48a50dc40533b4cc7875c
-size 193
+2026-01-03 19:46:09 - WebSocketBroadcaster - INFO - WebSocket Broadcaster initialized
+[OK] WebSocket Broadcaster initialized successfully
+INFO:     127.0.0.1:29609 - "GET / HTTP/1.1" 200 OK

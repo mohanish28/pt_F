@@ -1,3 +1,819 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:860554387e8ca52b5264446e9a484d5e6e3e5c198641a21a43918f1efe5749ca
-size 747
+2026-01-03 19:46:34 - ScannerWorker_web_security_worker_1 - INFO - Imported UnifiedWebSecurityScanner
+2026-01-03 19:46:34 - ScannerWorker_web_security_worker_1 - INFO - Imported WebSecurityScanner
+2026-01-03 19:46:34 - ScannerWorker_web_security_worker_1 - INFO - Imported NucleiScanner
+2026-01-03 19:46:35 - ScannerWorker_web_security_worker_1 - INFO - Imported XSStrikeScanner
+2026-01-03 19:46:35 - ScannerWorker_web_security_worker_1 - INFO - Loaded 4 scanners for category web_security
+2026-01-03 19:46:35 - ScannerWorker_web_security_worker_1 - INFO - Connected to Redis: redis://localhost:6379/0
+2026-01-03 19:46:35 - ScannerWorker_web_security_worker_1 - INFO - Scanner worker web_security_worker_1 started for category web_security
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a4447184 with NucleiScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'installation', 'findings']
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NucleiScanner' marked as completed (6 total)
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 7/4 scanners completed!
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a4447184 completed successfully in 3.04s with 0 findings
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (9 total)
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 7/4 scanners completed!
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (10 total)
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 7/4 scanners completed!
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (12 total)
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 7/4 scanners completed!
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:49 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (14 total)
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c942d757 with UnifiedWebSecurityScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (19 total)
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 8/4 scanners completed!
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c942d757 completed successfully in 0.01s with 0 findings
+2026-01-03 19:49:50 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_cbb073bc with XSStrikeScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'XSStrikeScanner' marked as completed (70 total)
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_cbb073bc completed successfully in 16.25s with 0 findings
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_99a91c85 with UnifiedWebSecurityScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (71 total)
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_99a91c85 completed successfully in 0.01s with 0 findings
+2026-01-03 19:50:06 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_bdaeaaa8 with NucleiScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+2026-01-03 19:50:07 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'installation', 'findings']
+2026-01-03 19:50:07 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:07 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NucleiScanner' marked as completed (72 total)
+2026-01-03 19:50:07 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:50:07 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_bdaeaaa8 completed successfully in 0.96s with 0 findings
+2026-01-03 19:50:07 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_57555336 with XSStrikeScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'XSStrikeScanner' marked as completed (78 total)
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_57555336 completed successfully in 13.71s with 0 findings
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0f4bf7ef with UnifiedWebSecurityScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (79 total)
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0f4bf7ef completed successfully in 0.00s with 0 findings
+2026-01-03 19:50:21 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e4bbc8d9 with NucleiScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 19:50:22 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'installation', 'findings']
+2026-01-03 19:50:22 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:22 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NucleiScanner' marked as completed (81 total)
+2026-01-03 19:50:22 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:50:22 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e4bbc8d9 completed successfully in 1.54s with 0 findings
+2026-01-03 19:50:22 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2fb73941 with XSStrikeScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'XSStrikeScanner' marked as completed (82 total)
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2fb73941 completed successfully in 1.04s with 0 findings
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_237ca1bb with UnifiedWebSecurityScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (83 total)
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_237ca1bb completed successfully in 0.00s with 0 findings
+2026-01-03 19:50:23 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d400c6e8 with NucleiScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 19:50:24 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'installation', 'findings']
+2026-01-03 19:50:24 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:24 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NucleiScanner' marked as completed (84 total)
+2026-01-03 19:50:24 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 9/4 scanners completed!
+2026-01-03 19:50:24 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d400c6e8 completed successfully in 0.78s with 0 findings
+2026-01-03 19:50:24 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_80da41f4 with XSStrikeScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'XSStrikeScanner' marked as completed (98 total)
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 11/4 scanners completed!
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_80da41f4 completed successfully in 18.96s with 0 findings
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_406f8ea1 with UnifiedWebSecurityScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (99 total)
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 11/4 scanners completed!
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_406f8ea1 completed successfully in 0.00s with 0 findings
+2026-01-03 19:50:43 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4e2b951e with NucleiScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 19:50:44 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'installation', 'findings']
+2026-01-03 19:50:44 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:44 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:50:44 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NucleiScanner' marked as completed (100 total)
+2026-01-03 19:50:44 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 11/4 scanners completed!
+2026-01-03 19:50:44 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4e2b951e completed successfully in 0.87s with 0 findings
+2026-01-03 19:50:44 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_85ebf847 with XSStrikeScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'XSStrikeScanner' marked as completed (104 total)
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 11/4 scanners completed!
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_85ebf847 completed successfully in 13.70s with 0 findings
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d5a3ad45 with UnifiedWebSecurityScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (105 total)
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 11/4 scanners completed!
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d5a3ad45 completed successfully in 0.00s with 0 findings
+2026-01-03 19:50:58 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_b3968aaa with NucleiScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 19:50:59 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'installation', 'findings']
+2026-01-03 19:50:59 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:50:59 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:50:59 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NucleiScanner' marked as completed (106 total)
+2026-01-03 19:50:59 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 11/4 scanners completed!
+2026-01-03 19:50:59 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_b3968aaa completed successfully in 1.13s with 0 findings
+2026-01-03 19:50:59 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e5e56b7c with XSStrikeScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'XSStrikeScanner' marked as completed (111 total)
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 11/4 scanners completed!
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e5e56b7c completed successfully in 10.70s with 0 findings
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5d7afc61 with UnifiedWebSecurityScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (112 total)
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 11/4 scanners completed!
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5d7afc61 completed successfully in 0.00s with 0 findings
+2026-01-03 19:51:10 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a9ef68d7 with NucleiScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 19:51:11 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'installation', 'findings']
+2026-01-03 19:51:11 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:11 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:11 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NucleiScanner' marked as completed (113 total)
+2026-01-03 19:51:11 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 11/4 scanners completed!
+2026-01-03 19:51:11 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a9ef68d7 completed successfully in 0.88s with 0 findings
+2026-01-03 19:51:11 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a41f80ad with XSStrikeScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'XSStrikeScanner' marked as completed (120 total)
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 12/4 scanners completed!
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a41f80ad completed successfully in 9.06s with 0 findings
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0264d529 with UnifiedWebSecurityScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (121 total)
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 12/4 scanners completed!
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0264d529 completed successfully in 0.00s with 0 findings
+2026-01-03 19:51:20 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a7dda0f3 with NucleiScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 19:51:21 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'installation', 'findings']
+2026-01-03 19:51:21 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:21 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:21 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NucleiScanner' marked as completed (123 total)
+2026-01-03 19:51:21 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 12/4 scanners completed!
+2026-01-03 19:51:21 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a7dda0f3 completed successfully in 1.08s with 0 findings
+2026-01-03 19:51:21 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e40357e9 with XSStrikeScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'XSStrikeScanner' marked as completed (129 total)
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 12/4 scanners completed!
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_e40357e9 completed successfully in 13.84s with 0 findings
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2c8bd4fd with UnifiedWebSecurityScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (130 total)
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 12/4 scanners completed!
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2c8bd4fd completed successfully in 0.01s with 0 findings
+2026-01-03 19:51:35 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ce0d2944 with NucleiScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 19:51:36 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'installation', 'findings']
+2026-01-03 19:51:36 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:36 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:36 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NucleiScanner' marked as completed (131 total)
+2026-01-03 19:51:36 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 12/4 scanners completed!
+2026-01-03 19:51:36 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ce0d2944 completed successfully in 0.90s with 0 findings
+2026-01-03 19:51:36 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_79325c64 with XSStrikeScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'XSStrikeScanner' marked as completed (138 total)
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 12/4 scanners completed!
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_79325c64 completed successfully in 13.45s with 0 findings
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9e80015e with UnifiedWebSecurityScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (139 total)
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 12/4 scanners completed!
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9e80015e completed successfully in 0.00s with 0 findings
+2026-01-03 19:51:49 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_50e6e004 with NucleiScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 19:51:50 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['error', 'scanner', 'target', 'installation', 'findings']
+2026-01-03 19:51:50 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:50 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:50 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'NucleiScanner' marked as completed (140 total)
+2026-01-03 19:51:50 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 12/4 scanners completed!
+2026-01-03 19:51:50 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_50e6e004 completed successfully in 1.11s with 0 findings
+2026-01-03 19:51:50 - ScannerWorker_web_security_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f56473b6 with XSStrikeScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'XSStrikeScanner' marked as completed (145 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f56473b6 completed successfully in 14.35s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (146 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (147 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (148 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (149 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (150 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (151 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (152 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (153 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (154 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (155 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.01s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (156 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (157 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (158 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (159 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Processing task None with web_security on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker execution results keys: ['scanner', 'scan_id', 'target', 'target_info', 'timestamp', 'summary', 'scanners', 'findings', 'scanner_results', 'errors']
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'UnifiedWebSecurityScanner' marked as completed (160 total)
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Task None completed successfully in 0.00s with 0 findings
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:05 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification
+2026-01-03 19:52:06 - ScannerWorker_web_security_worker_1 - INFO - Worker web_security_worker_1 received task notification

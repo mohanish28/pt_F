@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b01c755f9d206d7e4641c8d4135c6c9769ccba19de9be8dc6e327808b4a9ad2
-size 540
+2026-01-03 19:46:32 - ScannerWorker_information_disclosure_worker_0 - INFO - Imported InformationDisclosureScanner
+2026-01-03 19:46:33 - ScannerWorker_information_disclosure_worker_0 - INFO - Loaded 1 scanners for category information_disclosure
+2026-01-03 19:46:33 - ScannerWorker_information_disclosure_worker_0 - INFO - Connected to Redis: redis://localhost:6379/0
+2026-01-03 19:46:33 - ScannerWorker_information_disclosure_worker_0 - INFO - Scanner worker information_disclosure_worker_0 started for category information_disclosure
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Worker information_disclosure_worker_0 received task notification
+2026-01-03 19:49:46 - ScannerWorker_information_disclosure_worker_0 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f04c6ca8 with InformationDisclosureScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/

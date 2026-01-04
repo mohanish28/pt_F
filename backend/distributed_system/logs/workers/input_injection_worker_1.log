@@ -1,3 +1,733 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16ede9823109a3761db8bb13306092e803c4a6ffee5eb632c1cc0ae69c24862f
-size 874
+2026-01-03 19:46:32 - ScannerWorker_input_injection_worker_1 - INFO - Imported InputHandlingInjectionScanner
+2026-01-03 19:46:32 - ScannerWorker_input_injection_worker_1 - INFO - Imported SQLMapScanner
+2026-01-03 19:46:32 - ScannerWorker_input_injection_worker_1 - INFO - Imported CommixScanner
+2026-01-03 19:46:32 - ScannerWorker_input_injection_worker_1 - INFO - Imported ParamMinerScanner
+2026-01-03 19:46:33 - ScannerWorker_input_injection_worker_1 - INFO - Imported NoSQLMapScanner
+2026-01-03 19:46:33 - ScannerWorker_input_injection_worker_1 - INFO - Loaded 5 scanners for category input_injection
+2026-01-03 19:46:33 - ScannerWorker_input_injection_worker_1 - INFO - Connected to Redis: redis://localhost:6379/0
+2026-01-03 19:46:33 - ScannerWorker_input_injection_worker_1 - INFO - Scanner worker input_injection_worker_1 started for category input_injection
+2026-01-03 19:49:46 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 19:49:46 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_76ad1481 with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/
+2026-01-03 19:51:11 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 19:51:11 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:51:11 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:51:11 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (114 total)
+2026-01-03 19:51:11 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 12/4 scanners completed!
+2026-01-03 19:51:11 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_76ad1481 completed successfully in 84.86s with 0 findings
+2026-01-03 19:51:11 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3bbf4050 with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:52:05 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 19:52:05 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:05 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:05 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (161 total)
+2026-01-03 19:52:05 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 13/4 scanners completed!
+2026-01-03 19:52:05 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3bbf4050 completed successfully in 48.71s with 1 findings
+2026-01-03 19:52:05 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d3016cf9 with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=2
+2026-01-03 19:52:18 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:52:18 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:52:18 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:52:18 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (169 total)
+2026-01-03 19:52:18 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 14/4 scanners completed!
+2026-01-03 19:52:18 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_d3016cf9 completed successfully in 13.17s with 0 findings
+2026-01-03 19:52:18 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f3d3daf5 with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=18
+Error testing q with || dir C:\: Cannot connect to host 0a020063048e87c282a37e2d00940014.web-security-academy.net:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+2026-01-03 19:56:27 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 19:56:27 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:56:27 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:56:27 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (199 total)
+2026-01-03 19:56:27 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 19:56:27 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f3d3daf5 completed successfully in 249.08s with 0 findings
+2026-01-03 19:56:27 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_699ca74d with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 19:57:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 19:57:09 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:57:09 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:57:09 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (208 total)
+2026-01-03 19:57:09 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 19:57:09 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_699ca74d completed successfully in 37.27s with 1 findings
+2026-01-03 19:57:09 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f852b48a with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=17
+2026-01-03 19:57:20 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 19:57:20 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 19:57:20 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 19:57:20 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (211 total)
+2026-01-03 19:57:20 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 19:57:20 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_f852b48a completed successfully in 10.82s with 0 findings
+2026-01-03 19:57:20 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4b22c7d9 with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=1
+Error testing id with <img src=x onerror=alert("XSS")>: 
+Error testing q with <svg onload=alert("XSS")>: 
+Error testing id with #"><script>alert("DOM_XSS")</script>: 
+Error testing q with javascript:alert("DOM_XSS"): 
+2026-01-03 20:02:41 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 20:02:41 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:02:41 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:02:41 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (231 total)
+2026-01-03 20:02:41 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:02:41 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4b22c7d9 completed successfully in 321.17s with 0 findings
+2026-01-03 20:02:41 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1ec3311e with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+2026-01-03 20:03:25 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 20:03:25 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:03:25 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:03:25 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (240 total)
+2026-01-03 20:03:25 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:03:25 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1ec3311e completed successfully in 38.57s with 1 findings
+2026-01-03 20:03:25 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_675fdc68 with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=16
+2026-01-03 20:03:35 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 20:03:35 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:03:35 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:03:35 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (243 total)
+2026-01-03 20:03:35 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:03:35 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_675fdc68 completed successfully in 10.01s with 0 findings
+2026-01-03 20:03:35 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_828a83fd with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/my-account
+2026-01-03 20:10:25 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 20:10:25 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:10:25 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:10:25 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (286 total)
+2026-01-03 20:10:25 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:10:25 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_828a83fd completed successfully in 409.97s with 0 findings
+2026-01-03 20:10:25 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4c854a11 with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 20:11:16 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 20:11:16 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:11:16 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:11:17 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (291 total)
+2026-01-03 20:11:17 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:11:17 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_4c854a11 completed successfully in 46.26s with 1 findings
+2026-01-03 20:11:17 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7e6a7057 with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=4
+2026-01-03 20:11:29 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 20:11:29 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:11:29 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:11:29 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (296 total)
+2026-01-03 20:11:29 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:11:29 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_7e6a7057 completed successfully in 12.85s with 0 findings
+2026-01-03 20:11:29 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0c0a4b09 with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=20
+Error testing search with ' OR '1'='1: 
+Error testing q with #{7*7}: Cannot connect to host 0a020063048e87c282a37e2d00940014.web-security-academy.net:443 ssl:default [getaddrinfo failed]
+2026-01-03 20:15:50 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 20:15:50 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:15:50 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:15:50 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (342 total)
+2026-01-03 20:15:50 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:15:50 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_0c0a4b09 completed successfully in 260.60s with 0 findings
+2026-01-03 20:15:50 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_38c7d677 with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+2026-01-03 20:16:37 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 20:16:37 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:16:37 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:16:37 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (345 total)
+2026-01-03 20:16:37 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:16:37 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_38c7d677 completed successfully in 41.60s with 1 findings
+2026-01-03 20:16:37 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ea3b68c9 with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=19
+2026-01-03 20:16:48 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 20:16:48 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:16:48 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:16:48 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (348 total)
+2026-01-03 20:16:48 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:16:48 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_ea3b68c9 completed successfully in 11.76s with 0 findings
+2026-01-03 20:16:48 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_52ebabd2 with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=3
+2026-01-03 20:20:41 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 20:20:41 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:20:41 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:20:41 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (361 total)
+2026-01-03 20:20:41 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:20:41 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_52ebabd2 completed successfully in 232.59s with 0 findings
+2026-01-03 20:20:41 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_65af616b with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+2026-01-03 20:21:29 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 20:21:29 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:21:29 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:21:29 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (368 total)
+2026-01-03 20:21:29 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:21:29 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_65af616b completed successfully in 42.62s with 1 findings
+2026-01-03 20:21:29 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9572aa42 with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=6
+2026-01-03 20:21:44 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 20:21:44 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:21:44 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:21:44 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (369 total)
+2026-01-03 20:21:44 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:21:44 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_9572aa42 completed successfully in 15.07s with 0 findings
+2026-01-03 20:21:44 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2ac9ab96 with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=9
+Error testing q with <img src=x onerror=alert("XSS")>: Cannot connect to host 0a020063048e87c282a37e2d00940014.web-security-academy.net:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+Error testing q with ' UNION ALL SELECT NULL,NULL,NULL--: 
+2026-01-03 20:26:24 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 20:26:24 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:26:24 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:26:24 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (389 total)
+2026-01-03 20:26:24 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:26:24 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2ac9ab96 completed successfully in 279.70s with 0 findings
+2026-01-03 20:26:24 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a2e8d957 with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 20:27:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 20:27:09 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:27:09 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:27:09 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (393 total)
+2026-01-03 20:27:09 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:27:09 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_a2e8d957 completed successfully in 39.95s with 1 findings
+2026-01-03 20:27:09 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2bab455e with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=8
+2026-01-03 20:27:20 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 20:27:20 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:27:20 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:27:20 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (394 total)
+2026-01-03 20:27:20 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:27:20 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2bab455e completed successfully in 11.64s with 0 findings
+2026-01-03 20:27:20 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_bbf24930 with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=7
+Error testing q with {{''|attr('\x5f\x5fclass\x5f\x5f')}}: 
+2026-01-03 20:31:28 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 20:31:28 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:31:28 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:31:28 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (413 total)
+2026-01-03 20:31:28 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:31:28 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_bbf24930 completed successfully in 247.49s with 0 findings
+2026-01-03 20:31:28 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1c9fae97 with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 20:32:11 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 20:32:11 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:32:11 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:32:11 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (415 total)
+2026-01-03 20:32:11 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:32:11 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_1c9fae97 completed successfully in 37.79s with 1 findings
+2026-01-03 20:32:11 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3e902ffc with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=5
+2026-01-03 20:32:21 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 20:32:21 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:32:21 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:32:21 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (416 total)
+2026-01-03 20:32:21 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:32:21 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3e902ffc completed successfully in 10.29s with 0 findings
+2026-01-03 20:32:21 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_57564ec6 with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=12
+2026-01-03 20:36:06 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 20:36:06 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:36:06 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:36:06 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (434 total)
+2026-01-03 20:36:06 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:36:06 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_57564ec6 completed successfully in 225.34s with 0 findings
+2026-01-03 20:36:06 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3fab17ec with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+2026-01-03 20:36:48 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 20:36:48 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:36:48 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:36:48 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (435 total)
+2026-01-03 20:36:48 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:36:48 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_3fab17ec completed successfully in 36.33s with 1 findings
+2026-01-03 20:36:48 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_31bcdab6 with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=11
+2026-01-03 20:36:58 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 20:36:58 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:36:58 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:36:58 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (436 total)
+2026-01-03 20:36:58 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:36:58 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_31bcdab6 completed successfully in 10.43s with 0 findings
+2026-01-03 20:36:58 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c04c2d0e with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=10
+2026-01-03 20:40:48 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 20:40:48 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:40:48 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:40:48 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (446 total)
+2026-01-03 20:40:48 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:40:48 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_c04c2d0e completed successfully in 229.56s with 0 findings
+2026-01-03 20:40:48 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2f5b3bd7 with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+2026-01-03 20:41:40 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 20:41:40 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:41:40 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:41:40 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (452 total)
+2026-01-03 20:41:40 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:41:40 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_2f5b3bd7 completed successfully in 47.42s with 1 findings
+2026-01-03 20:41:40 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_fd237a37 with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=15
+2026-01-03 20:42:03 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 20:42:03 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:42:03 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:42:03 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (453 total)
+2026-01-03 20:42:03 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:42:03 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_fd237a37 completed successfully in 22.93s with 1 findings
+2026-01-03 20:42:03 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_91f59134 with InputHandlingInjectionScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=14
+2026-01-03 20:46:05 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner_name', 'target_url', 'scan_start', 'findings', 'summary', 'scan_phases', 'errors', 'scan_end']
+2026-01-03 20:46:05 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:46:05 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:46:05 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'InputHandlingInjectionScanner' marked as completed (467 total)
+2026-01-03 20:46:05 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:46:05 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_91f59134 completed successfully in 241.95s with 0 findings
+2026-01-03 20:46:05 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_180a8a05 with SQLMapScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+2026-01-03 20:46:50 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'method', 'findings', 'summary', 'statistics']
+2026-01-03 20:46:50 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:46:50 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:46:50 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'SQLMapScanner' marked as completed (469 total)
+2026-01-03 20:46:50 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:46:50 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_180a8a05 completed successfully in 40.28s with 1 findings
+2026-01-03 20:46:50 - ScannerWorker_input_injection_worker_1 - INFO - Processing task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5eb4743c with CommixScanner on https://0a020063048e87c282a37e2d00940014.web-security-academy.net/product?productId=13
+2026-01-03 20:47:06 - ScannerWorker_input_injection_worker_1 - INFO - Worker execution results keys: ['scanner', 'target', 'findings', 'statistics']
+2026-01-03 20:47:06 - ScannerWorker_input_injection_worker_1 - WARNING - Worker: raw_data MISSING in scanner results!
+2026-01-03 20:47:06 - ScannerWorker_input_injection_worker_1 - INFO - [COMPLETION TRIGGER] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Last task completed! tasks_pending = 0
+2026-01-03 20:47:06 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER TRACKING] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: Scanner 'CommixScanner' marked as completed (470 total)
+2026-01-03 20:47:06 - ScannerWorker_input_injection_worker_1 - INFO - [SCANNER COMPLETION] 0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public: ALL 21/4 scanners completed!
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Task scan_0a020063048e87c282a37e2d00940014.web-security-academy.net_20260103_194943_public_5eb4743c completed successfully in 15.94s with 0 findings
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:07 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:08 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:09 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification
+2026-01-03 20:47:10 - ScannerWorker_input_injection_worker_1 - INFO - Worker input_injection_worker_1 received task notification

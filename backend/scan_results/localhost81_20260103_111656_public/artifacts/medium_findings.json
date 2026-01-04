@@ -1,0 +1,682 @@
+[
+  {
+    "title": "Missing Security Header: Strict-Transport-Security",
+    "severity": "medium",
+    "category": "security_headers",
+    "description": "HSTS missing",
+    "remediation": "Add Strict-Transport-Security security header",
+    "cve_references": [
+      {
+        "cve_id": "CVE-2019-4326",
+        "cvss_v3_score": 7.5,
+        "cvss_v2_score": 5.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_severity": "MEDIUM",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "cvss_v2_vector": "",
+        "description": "\"HCL AppScan Enterprise security rules update administration section of the web application console is missing HTTP Strict-Transport-Security Header.\"",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-116"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0082505",
+          "https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0082505"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2016-0297",
+        "cvss_v3_score": 3.7,
+        "cvss_v2_score": 4.3,
+        "cvss_v3_severity": "LOW",
+        "cvss_v2_severity": "MEDIUM",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+        "cvss_v2_vector": "",
+        "description": "IBM Tivoli Endpoint Manager - Mobile Device Management (MDM) could allow a remote attacker to obtain sensitive information due to a missing HTTP Strict-Transport-Security Header through man in the middle techniques.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.ibm.com/support/docview.wss?uid=swg21993214",
+          "http://www.securityfocus.com/bid/94188",
+          "http://www.ibm.com/support/docview.wss?uid=swg21993214",
+          "http://www.securityfocus.com/bid/94188"
+        ],
+        "attack_vector": "NETWORK"
+      }
+    ],
+    "primary_cve_id": "CVE-2019-4326",
+    "cve_ids": [
+      "CVE-2019-4326",
+      "CVE-2016-0297"
+    ],
+    "cvss_score": 7.5,
+    "enriched_severity": "HIGH",
+    "remediation_priority": 4,
+    "exploitability_likelihood": "HIGH",
+    "business_impact": "HIGH",
+    "cwe_ids": [
+      "CWE-116",
+      "CWE-200"
+    ],
+    "capec_ids": [],
+    "mitre_classification": {}
+  },
+  {
+    "title": "Missing Security Header: Content-Security-Policy",
+    "severity": "medium",
+    "category": "security_headers",
+    "description": "CSP missing",
+    "remediation": "Add Content-Security-Policy security header",
+    "cve_references": [
+      {
+        "cve_id": "CVE-2022-24796",
+        "cvss_v3_score": 10.0,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "RaspberryMatic is a free and open-source operating system for running a cloud-free smart-home using the homematicIP / HomeMatic hardware line of IoT devices. A Remote Code Execution (RCE) vulnerability in the file upload facility of the WebUI interface of RaspberryMatic exists. Missing input validation/sanitization in the file upload mechanism allows remote, unauthenticated attackers with network access to the WebUI interface to achieve arbitrary operating system command execution via shell metacharacters in the HTTP query string. Injected commands are executed as root, thus leading to a full compromise of the underlying system and all its components. Versions after `2.31.25.20180428` and prior to `3.63.8.20220330` are affected. Users are advised to update to version `3.63.8.20220330` or newer. There are currently no known workarounds to mitigate the security impact and users are advised to update to the latest version available.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://github.com/jens-maus/RaspberryMatic/commit/34854659a63e9fb3ad529bb413e96978c6450a53",
+          "https://github.com/jens-maus/RaspberryMatic/security/advisories/GHSA-g7vv-7rmf-mff7",
+          "https://github.com/jens-maus/RaspberryMatic/commit/34854659a63e9fb3ad529bb413e96978c6450a53",
+          "https://github.com/jens-maus/RaspberryMatic/security/advisories/GHSA-g7vv-7rmf-mff7"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2015-9142",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "In Android before 2018-04-05 or earlier security patch level on Qualcomm Snapdragon Mobile MDM9645, MDM9650, SD 210/SD 212/SD 205, SD 400, SD 410/12, SD 425, SD 427, SD 430, SD 435, SD 450, SD 615/16/SD 415, SD 625, SD 650/52, SD 800, SD 808, SD 810, SD 820, SDM630, SDM636, SDM660, and Snapdragon_High_Med_2016, bounds check is missing for vtable index in DAL-TO-QDI conversion framework.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-118"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01",
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2015-9173",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "In Android before 2018-04-05 or earlier security patch level on Qualcomm Snapdragon Mobile SD 410/12, SD 617, SD 650/52, SD 800, SD 808, and SD 810, missing of return value check in memscpy can cause memory corruption in TQS App.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01",
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2016-10476",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "In Android before 2018-04-05 or earlier security patch level on Qualcomm Snapdragon Mobile and Snapdragon Wear MDM9206, MDM9607, MDM9650, MSM8909W, SD 210/SD 212/SD 205, SD 400, SD 410/12, SD 425, SD 430, SD 450, SD 615/16/SD 415, SD 617, SD 625, SD 650/52, SD 800, SD 808, SD 810, SD 820, SD 835, and SDX20, missing array index checks on app index in function qcril_uim_clear_encrypted_pin results in accessing addresses outside the bounds of the buffer when app index is too large.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01",
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2017-6622",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "A vulnerability in the web interface for Cisco Prime Collaboration Provisioning could allow an unauthenticated, remote attacker to bypass authentication and perform command injection with root privileges. The vulnerability is due to missing security constraints in certain HTTP request methods, which could allow access to files via the web interface. An attacker could exploit this vulnerability by sending a crafted HTTP request to the targeted application. This vulnerability affects Cisco Prime Collaboration Provisioning Software Releases prior to 12.1. Cisco Bug IDs: CSCvc98724.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-264",
+          "CWE-862"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.securityfocus.com/bid/98520",
+          "http://www.securitytracker.com/id/1038507",
+          "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170517-pcp1",
+          "https://www.exploit-db.com/exploits/42888/",
+          "http://www.securityfocus.com/bid/98520"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2019-3725",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 7.5,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "HIGH",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "RSA Netwitness Platform versions prior to 11.2.1.1 and RSA Security Analytics versions prior to 10.6.6.1 are vulnerable to a Command Injection vulnerability due to missing input validation in the product. A remote unauthenticated malicious user could exploit this vulnerability to execute arbitrary commands on the server.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.securityfocus.com/bid/108355",
+          "https://community.rsa.com/docs/DOC-104202",
+          "http://www.securityfocus.com/bid/108355",
+          "https://community.rsa.com/docs/DOC-104202"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2019-17006",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "In Network Security Services (NSS) before 3.46, several cryptographic primitives had missing length checks. In cases where the application calling the library did not perform a sanity check on the inputs it could result in a crash due to a buffer overflow.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-119"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://bugzilla.mozilla.org/show_bug.cgi?id=1539788",
+          "https://cert-portal.siemens.com/productcert/pdf/ssa-379803.pdf",
+          "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.46_release_notes",
+          "https://security.netapp.com/advisory/ntap-20210129-0001/",
+          "https://us-cert.cisa.gov/ics/advisories/icsa-21-040-04"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2020-7540",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 7.5,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "HIGH",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "A CWE-306: Missing Authentication for Critical Function vulnerability exists in the Web Server on Modicon M340, Legacy Offers Modicon Quantum and Modicon Premium and associated Communication Modules (see security notification for affected versions), that could cause unauthenticated command execution in the controller when sending special HTTP requests.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://www.se.com/ww/en/download/document/SEVD-2020-343-04/",
+          "https://www.se.com/ww/en/download/document/SEVD-2020-343-04/"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2020-21991",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 7.5,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "HIGH",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "AVE DOMINAplus <=1.10.x suffers from an authentication bypass vulnerability due to missing control check when directly calling the autologin GET parameter in changeparams.php script. Setting the autologin value to 1 allows an unauthenticated attacker to permanently disable the authentication security control and access the management interface with admin privileges without providing credentials.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://www.exploit-db.com/exploits/47822",
+          "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2019-5549.php",
+          "https://www.exploit-db.com/exploits/47822",
+          "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2019-5549.php"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2021-20578",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 7.5,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "HIGH",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "IBM Cloud Pak for Security (CP4S) 1.7.0.0, 1.7.1.0, 1.7.2.0, and 1.8.0.0 could allow an attacker to perform unauthorized actions due to improper or missing authentication controls. IBM X-Force ID: 199282.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://exchange.xforce.ibmcloud.com/vulnerabilities/199282",
+          "https://www.ibm.com/support/pages/node/6493729",
+          "https://exchange.xforce.ibmcloud.com/vulnerabilities/199282",
+          "https://www.ibm.com/support/pages/node/6493729"
+        ],
+        "attack_vector": "NETWORK"
+      }
+    ],
+    "primary_cve_id": "CVE-2022-24796",
+    "cve_ids": [
+      "CVE-2022-24796",
+      "CVE-2015-9142",
+      "CVE-2015-9173",
+      "CVE-2016-10476",
+      "CVE-2017-6622",
+      "CVE-2019-3725",
+      "CVE-2019-17006",
+      "CVE-2020-7540",
+      "CVE-2020-21991",
+      "CVE-2021-20578"
+    ],
+    "cvss_score": 10.0,
+    "enriched_severity": "CRITICAL",
+    "remediation_priority": 5,
+    "exploitability_likelihood": "HIGH",
+    "business_impact": "CRITICAL",
+    "cwe_ids": [
+      "CWE-264",
+      "CWE-118",
+      "CWE-862",
+      "CWE-287",
+      "CWE-78",
+      "CWE-20",
+      "CWE-306",
+      "CWE-119"
+    ],
+    "capec_ids": [],
+    "mitre_classification": {}
+  },
+  {
+    "title": "Missing Security Header: Strict-Transport-Security",
+    "severity": "medium",
+    "category": "security_headers",
+    "description": "HSTS missing",
+    "remediation": "Add Strict-Transport-Security security header",
+    "cve_references": [
+      {
+        "cve_id": "CVE-2019-4326",
+        "cvss_v3_score": 7.5,
+        "cvss_v2_score": 5.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_severity": "MEDIUM",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "cvss_v2_vector": "",
+        "description": "\"HCL AppScan Enterprise security rules update administration section of the web application console is missing HTTP Strict-Transport-Security Header.\"",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-116"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0082505",
+          "https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0082505"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2016-0297",
+        "cvss_v3_score": 3.7,
+        "cvss_v2_score": 4.3,
+        "cvss_v3_severity": "LOW",
+        "cvss_v2_severity": "MEDIUM",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+        "cvss_v2_vector": "",
+        "description": "IBM Tivoli Endpoint Manager - Mobile Device Management (MDM) could allow a remote attacker to obtain sensitive information due to a missing HTTP Strict-Transport-Security Header through man in the middle techniques.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.ibm.com/support/docview.wss?uid=swg21993214",
+          "http://www.securityfocus.com/bid/94188",
+          "http://www.ibm.com/support/docview.wss?uid=swg21993214",
+          "http://www.securityfocus.com/bid/94188"
+        ],
+        "attack_vector": "NETWORK"
+      }
+    ],
+    "primary_cve_id": "CVE-2019-4326",
+    "cve_ids": [
+      "CVE-2019-4326",
+      "CVE-2016-0297"
+    ],
+    "cvss_score": 7.5,
+    "enriched_severity": "HIGH",
+    "remediation_priority": 4,
+    "exploitability_likelihood": "HIGH",
+    "business_impact": "HIGH",
+    "cwe_ids": [
+      "CWE-116",
+      "CWE-200"
+    ],
+    "capec_ids": [],
+    "mitre_classification": {}
+  },
+  {
+    "title": "Missing Security Header: Content-Security-Policy",
+    "severity": "medium",
+    "category": "security_headers",
+    "description": "CSP missing",
+    "remediation": "Add Content-Security-Policy security header",
+    "cve_references": [
+      {
+        "cve_id": "CVE-2022-24796",
+        "cvss_v3_score": 10.0,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "RaspberryMatic is a free and open-source operating system for running a cloud-free smart-home using the homematicIP / HomeMatic hardware line of IoT devices. A Remote Code Execution (RCE) vulnerability in the file upload facility of the WebUI interface of RaspberryMatic exists. Missing input validation/sanitization in the file upload mechanism allows remote, unauthenticated attackers with network access to the WebUI interface to achieve arbitrary operating system command execution via shell metacharacters in the HTTP query string. Injected commands are executed as root, thus leading to a full compromise of the underlying system and all its components. Versions after `2.31.25.20180428` and prior to `3.63.8.20220330` are affected. Users are advised to update to version `3.63.8.20220330` or newer. There are currently no known workarounds to mitigate the security impact and users are advised to update to the latest version available.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://github.com/jens-maus/RaspberryMatic/commit/34854659a63e9fb3ad529bb413e96978c6450a53",
+          "https://github.com/jens-maus/RaspberryMatic/security/advisories/GHSA-g7vv-7rmf-mff7",
+          "https://github.com/jens-maus/RaspberryMatic/commit/34854659a63e9fb3ad529bb413e96978c6450a53",
+          "https://github.com/jens-maus/RaspberryMatic/security/advisories/GHSA-g7vv-7rmf-mff7"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2015-9142",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "In Android before 2018-04-05 or earlier security patch level on Qualcomm Snapdragon Mobile MDM9645, MDM9650, SD 210/SD 212/SD 205, SD 400, SD 410/12, SD 425, SD 427, SD 430, SD 435, SD 450, SD 615/16/SD 415, SD 625, SD 650/52, SD 800, SD 808, SD 810, SD 820, SDM630, SDM636, SDM660, and Snapdragon_High_Med_2016, bounds check is missing for vtable index in DAL-TO-QDI conversion framework.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-118"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01",
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2015-9173",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "In Android before 2018-04-05 or earlier security patch level on Qualcomm Snapdragon Mobile SD 410/12, SD 617, SD 650/52, SD 800, SD 808, and SD 810, missing of return value check in memscpy can cause memory corruption in TQS App.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01",
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2016-10476",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "In Android before 2018-04-05 or earlier security patch level on Qualcomm Snapdragon Mobile and Snapdragon Wear MDM9206, MDM9607, MDM9650, MSM8909W, SD 210/SD 212/SD 205, SD 400, SD 410/12, SD 425, SD 430, SD 450, SD 615/16/SD 415, SD 617, SD 625, SD 650/52, SD 800, SD 808, SD 810, SD 820, SD 835, and SDX20, missing array index checks on app index in function qcril_uim_clear_encrypted_pin results in accessing addresses outside the bounds of the buffer when app index is too large.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01",
+          "http://www.securityfocus.com/bid/103671",
+          "https://source.android.com/security/bulletin/2018-04-01"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2017-6622",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "A vulnerability in the web interface for Cisco Prime Collaboration Provisioning could allow an unauthenticated, remote attacker to bypass authentication and perform command injection with root privileges. The vulnerability is due to missing security constraints in certain HTTP request methods, which could allow access to files via the web interface. An attacker could exploit this vulnerability by sending a crafted HTTP request to the targeted application. This vulnerability affects Cisco Prime Collaboration Provisioning Software Releases prior to 12.1. Cisco Bug IDs: CSCvc98724.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-264",
+          "CWE-862"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.securityfocus.com/bid/98520",
+          "http://www.securitytracker.com/id/1038507",
+          "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170517-pcp1",
+          "https://www.exploit-db.com/exploits/42888/",
+          "http://www.securityfocus.com/bid/98520"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2019-3725",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 7.5,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "HIGH",
+        "cvss_v3_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "RSA Netwitness Platform versions prior to 11.2.1.1 and RSA Security Analytics versions prior to 10.6.6.1 are vulnerable to a Command Injection vulnerability due to missing input validation in the product. A remote unauthenticated malicious user could exploit this vulnerability to execute arbitrary commands on the server.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "capec_ids": [],
+        "references": [
+          "http://www.securityfocus.com/bid/108355",
+          "https://community.rsa.com/docs/DOC-104202",
+          "http://www.securityfocus.com/bid/108355",
+          "https://community.rsa.com/docs/DOC-104202"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2019-17006",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "CRITICAL",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "In Network Security Services (NSS) before 3.46, several cryptographic primitives had missing length checks. In cases where the application calling the library did not perform a sanity check on the inputs it could result in a crash due to a buffer overflow.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-119"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://bugzilla.mozilla.org/show_bug.cgi?id=1539788",
+          "https://cert-portal.siemens.com/productcert/pdf/ssa-379803.pdf",
+          "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.46_release_notes",
+          "https://security.netapp.com/advisory/ntap-20210129-0001/",
+          "https://us-cert.cisa.gov/ics/advisories/icsa-21-040-04"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2020-7540",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 7.5,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "HIGH",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "A CWE-306: Missing Authentication for Critical Function vulnerability exists in the Web Server on Modicon M340, Legacy Offers Modicon Quantum and Modicon Premium and associated Communication Modules (see security notification for affected versions), that could cause unauthenticated command execution in the controller when sending special HTTP requests.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://www.se.com/ww/en/download/document/SEVD-2020-343-04/",
+          "https://www.se.com/ww/en/download/document/SEVD-2020-343-04/"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2020-21991",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 7.5,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "HIGH",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "AVE DOMINAplus <=1.10.x suffers from an authentication bypass vulnerability due to missing control check when directly calling the autologin GET parameter in changeparams.php script. Setting the autologin value to 1 allows an unauthenticated attacker to permanently disable the authentication security control and access the management interface with admin privileges without providing credentials.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://www.exploit-db.com/exploits/47822",
+          "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2019-5549.php",
+          "https://www.exploit-db.com/exploits/47822",
+          "https://www.zeroscience.mk/en/vulnerabilities/ZSL-2019-5549.php"
+        ],
+        "attack_vector": "NETWORK"
+      },
+      {
+        "cve_id": "CVE-2021-20578",
+        "cvss_v3_score": 9.8,
+        "cvss_v2_score": 7.5,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_severity": "HIGH",
+        "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_v2_vector": "",
+        "description": "IBM Cloud Pak for Security (CP4S) 1.7.0.0, 1.7.1.0, 1.7.2.0, and 1.8.0.0 could allow an attacker to perform unauthorized actions due to improper or missing authentication controls. IBM X-Force ID: 199282.",
+        "published_date": "",
+        "modified_date": "",
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "capec_ids": [],
+        "references": [
+          "https://exchange.xforce.ibmcloud.com/vulnerabilities/199282",
+          "https://www.ibm.com/support/pages/node/6493729",
+          "https://exchange.xforce.ibmcloud.com/vulnerabilities/199282",
+          "https://www.ibm.com/support/pages/node/6493729"
+        ],
+        "attack_vector": "NETWORK"
+      }
+    ],
+    "primary_cve_id": "CVE-2022-24796",
+    "cve_ids": [
+      "CVE-2022-24796",
+      "CVE-2015-9142",
+      "CVE-2015-9173",
+      "CVE-2016-10476",
+      "CVE-2017-6622",
+      "CVE-2019-3725",
+      "CVE-2019-17006",
+      "CVE-2020-7540",
+      "CVE-2020-21991",
+      "CVE-2021-20578"
+    ],
+    "cvss_score": 10.0,
+    "enriched_severity": "CRITICAL",
+    "remediation_priority": 5,
+    "exploitability_likelihood": "HIGH",
+    "business_impact": "CRITICAL",
+    "cwe_ids": [
+      "CWE-264",
+      "CWE-118",
+      "CWE-862",
+      "CWE-287",
+      "CWE-78",
+      "CWE-20",
+      "CWE-306",
+      "CWE-119"
+    ],
+    "capec_ids": [],
+    "mitre_classification": {}
+  }
+]
